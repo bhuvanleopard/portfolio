@@ -1,9 +1,10 @@
-interface BackgroundProps {
+// interface BackgroundProps {
 
-    children: React.ReactNode
-}
+//     children: React.ReactNode
+// }
 
-const Background: React.FC<BackgroundProps> = () => {
+
+const Background: React.FC = () => {
   
     return (
 
