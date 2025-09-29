@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+*{
+    font-family: monospace;
+    /* border: 1px solid gray; */
+    border-radius: 4px;
+    text-align: center;
+}
+
+@theme {
+
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+}
+
+@layer base{
+
+    body{
+
+        @apply bg-black text-white 
+        relative h-full w-full overflow-x-hidden
+    }
+
+    
+}
+
+@layer components{
+    
+    .header-text {
+
+        @apply text-3xl md:text-4xl lg:text-5xl font-light m-0
+    }
+
+    .nav-bar-item {
+
+      @apply cursor-pointer md:text-2xl font-medium tracking-wider transition-colors
+       hover:text-cyan-400 z-50 md:p-3 lg:p-5 rounded-md md:font-bold
+    }
+}
+
+@layer base {
+
+  * {
+    
+    @apply text-white/95
+  }
+}
