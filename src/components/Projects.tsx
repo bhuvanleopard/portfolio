@@ -1,7 +1,5 @@
 import type { PropsWithChildren } from "react";
-import { FaGithub } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
-import { TbBrandGithubFilled } from "react-icons/tb";
 
 interface CardI {
 
