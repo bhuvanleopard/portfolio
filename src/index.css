@@ -3,7 +3,7 @@
 *{
     font-family: monospace;
     /* border: 1px solid gray; */
-    border-radius: 4px;
+    /* border-radius: 4px; */
     text-align: center;
 }
 
@@ -44,6 +44,11 @@
       @apply cursor-pointer md:text-2xl font-medium tracking-wider transition-colors
        hover:text-cyan-400 z-50 md:p-3 lg:p-5 rounded-md md:font-bold
     }
+
+    .main-section {
+
+      @apply h-[100vh] scroll-mt-24 scroll-mt-24 lg:scroll-mt-28
+    }
 }
 
 @layer base {
@@ -52,4 +57,10 @@
     
     @apply text-white/95
   }
+}
+
+*{
+
+  min-width: fit-content;
+  min-height: fit-content;
 }

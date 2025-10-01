@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Profile from "./components/Profile"
 import Home from "./components/Home"
 import Projects from "./components/Projects"
 import Header from "./components/Header"
@@ -16,18 +15,17 @@ function App() {
 
       </Background>
 
-
         <Header/>
       
-        <main className="relative -z-50">
+        {/* <main>
             <Routes>
               <Route path="/" element={<Home/>}/>
-              <Route path="/profile" element={<Profile/>}/>
+              <Route path="/home" element={<Home/>}/>
               <Route path="/projects" element={<Projects/>}/>
               <Route path="/footer" element={<Footer/>} />
             </Routes>
-        </main>
-      
+        </main> */}
+        <Home/>
         <Footer/>
         
     </BrowserRouter>

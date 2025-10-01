@@ -16,10 +16,10 @@ const NavBar = function(){
     }
     return (<>
 
-        <nav className="hidden md:flex items-center justify-center gap-12 md:gap-6">
-            <a className="nav-bar-item" href="#home">HOME</a>
+        <nav className="hidden md:flex items-center justify-between gap-12 md:gap-6 w-full">
             <a className="nav-bar-item" href="#skills">SKILLS</a>
             <a className="nav-bar-item" href="#projects">PROJECTS</a>
+            <a className="nav-bar-item" href="#aboutMe">ABOUT ME</a>
             <a className="nav-bar-item" href="#contact">CONTACT</a>
             <a className="nav-bar-item" href="#resume">RESUME</a>
         </nav>
@@ -32,7 +32,7 @@ const NavBar = function(){
         
         <div id='mobileMenu' className="fixed top-20 w-full h-screen bottom-0 right-0 left-0 p-4 md:hidden bg-black/75 z-40">
             <nav className="flex flex-col gap-12 items-center px-4 py-16 animate-pulse">
-            <a onClick={toggleMobileMenu} className="cursor-pointer text-3xl tracking-wider transition-colors hover:text-gray-300 z-50 font-bold" href="#home">HOME</a>
+            <a onClick={toggleMobileMenu} className="cursor-pointer text-3xl tracking-wider transition-colors hover:text-gray-300 z-50 font-bold" href="#aboutMe">ABOUT ME</a>
             <a onClick={toggleMobileMenu} className="cursor-pointer text-3xl tracking-wider transition-colors hover:text-gray-300 z-50 font-bold" href="#skills">SKILLS</a>
             <a onClick={toggleMobileMenu} className="cursor-pointer text-3xl tracking-wider transition-colors hover:text-gray-300 z-50 font-bold" href="#projects">PROJECTS</a>
             <a onClick={toggleMobileMenu} className="cursor-pointer text-3xl tracking-wider transition-colors hover:text-gray-300 z-50 font-bold" href="#contact">CONTACT</a>
