@@ -18,11 +18,13 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
 
     return(<div className="relative flex flex-col justify-center items-center w-full">
 
-        <div className="relative flex justify-between items-center w-full">
+        <div className="relative flex justify-between items-center w-full py-2">
 
             <div className="relative flex flex-row justify-between w-full items-center">
                 
-                <div className="relative sm:text-6xl sm:tracking-[5px] md:text-8xl tracking-[10px] font-extrabold ">{title}</div>
+                <div className="relative sm:text-6xl sm:tracking-[5px] md:text-8xl 
+                tracking-[10px] font-extrabold"
+                >{title}</div>
 
                 <div className="flex flex-row justify-between items-center gap-4">
                     

@@ -8,11 +8,13 @@ const {ProjectCard, Projects} = Project
 
 const Home = function(){
 
-    return(<main className=" border-1 pt-26 px-8">
+    return(<main className="pt-26 px-8 z-30" id="main-content">
 
         <AboutMe/>
         <Projects>
             <ProjectCard image="" title="CATERING" description="" techStack={["TYPESCRIPT", "REACT"]} live="" repo=""/>
+            <ProjectCard image="" title="CATERING" description="" techStack={["TYPESCRIPT", "REACT"]} live="" repo=""/>
+            <ProjectCard image="" title="LIVE" description="" techStack={["TYPESCRIPT", "REACT"]} live="" repo=""/>
         </Projects>
         <Skills/>
 
