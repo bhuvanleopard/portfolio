@@ -4,8 +4,10 @@
     font-family: monospace;
     /* border: 1px solid gray; */
     /* border-radius: 4px; */
-    text-align: center;
-}
+    /* text-align: center; */
+    /* margin: 0; */
+    /* padding: 0; */
+}   
 
 @theme {
 
@@ -29,6 +31,12 @@
         relative h-full w-full overflow-x-hidden
     }
 
+    html {
+
+      /* @apply overflow-y-hidden */
+
+      
+    }
     
 }
 
@@ -47,7 +55,12 @@
 
     .main-section {
 
-      @apply h-[100vh] scroll-mt-24 scroll-mt-24 lg:scroll-mt-28
+      @apply h-[100vh] scroll-mt-24 lg:scroll-mt-28 flex flex-col items-center justify-evenly px-8
+    }
+
+    .main-content {
+
+      @apply w-full h-[100vh] scroll-mt-26 flex flex-col justify-center items-center px-16
     }
 }
 
@@ -63,4 +76,9 @@
 
   min-width: fit-content;
   min-height: fit-content;
+}
+
+html {
+
+  scrollbar-gutter: stable;
 }

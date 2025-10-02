@@ -8,16 +8,16 @@ const {ProjectCard, Projects} = Project
 
 const Home = function(){
 
-    return(<div className="relative z-40 sm:pt-22 lg:pt-26">
-        {/* <Filler/> */}
+    return(<main className=" border-1 pt-26 px-8">
+
         <AboutMe/>
         <Projects>
-
-            <ProjectCard title="CATERING" image="dk" live="kdjfkd" repo="https://github.com/bhuvanleopard/voting_system" description="dkfjkd" techStack={["React", "TypeScript", "Node", "WebSockets", "TailwindCss"]}/>
+            <ProjectCard image="" title="CATERING" description="" techStack={["TYPESCRIPT", "REACT"]} live="" repo=""/>
         </Projects>
         <Skills/>
-        <Contact/>  
-    </div>)
+
+        <Contact/>
+    </main>)
 };
 
 export default Home

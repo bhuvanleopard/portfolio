@@ -1,18 +1,14 @@
 import { BrowserRouter} from "react-router-dom"
 import Home from "./components/Home"
 import Header from "./components/Header"
-import Footer from "./components/Footer"
 import Background from "./components/Background"
-
 function App() {
 
   return (<>
 
     <BrowserRouter>
 
-      <Background>
-
-      </Background>
+      <Background/>
 
         <Header/>
       
@@ -25,7 +21,8 @@ function App() {
             </Routes>
         </main> */}
         <Home/>
-        <Footer/>
+        {/* <AboutMe/> */}
+        {/* <Footer/> */}
         
     </BrowserRouter>
   

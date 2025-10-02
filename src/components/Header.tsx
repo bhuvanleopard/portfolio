@@ -12,7 +12,7 @@ const Header = function(){
         w-full
         shadow-xl
         flex justify-between items-center
-        p-4
+        py-4 px-6
         md:p-4 lg:px-8 z-99
         bg-black
         '>
@@ -20,7 +20,7 @@ const Header = function(){
             <NavBar/>
             <div className="cursor-pointer hover:animate-wiggle hover:text-cyan-400 border border-white/25">
                 {/* <img src="logo.webp"/> */}
-                <h1 className="text-2xl md:hidden m-0 bg-white/5 p-2.5 tracking-widest font-extrabold">BHUVAN</h1>
+                <h1 className="text-2xl md:hidden m-0 bg-white/5 tracking-widest font-extrabold">BHUVAN</h1>
             </div>
         </header>
     )
