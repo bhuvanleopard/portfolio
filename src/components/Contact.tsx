@@ -1,8 +1,9 @@
 
 const Contact = () => {
-  return (
-    <div className="main-section" id="contact">Contact</div>
-  )
+  return (<div id="contact"
+  className="h-[100vh] w-full">
+
+  </div>)
 }
 
 export default Contact
