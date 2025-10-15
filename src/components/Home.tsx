@@ -27,7 +27,7 @@ const Home = function(){
             <AboutMe profession="FULL-STACK DEV" name="BHUVAN CHAVAN" profile={Profile}/>
             </div>
             
-            <div className="relative w-[100%] sm:w-[632px] md:w-[760px] lg:w-[1016px] p-2 lg:p-2 ">
+            <div className="relative w-[100%] sm:w-[632px] md:w-[760px] lg:w-[1016px] p-4 lg:p-8 ">
             <Intro intro="Dynamic and detail-oriented Full Stack Developer with hands-on experience in building scalable and robust
                 web applications. Proficient in a variety of front-end, back-end, and system design technologies, with a
                 strong commitment to delivering high-quality solutions. Skilled in problem-solving and team collaboration,

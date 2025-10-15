@@ -19,21 +19,21 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
     return(
     <div className="relative h-[100vh] w-full flex items-center justify-center p-4 lg:p-8">
     {/* <div className="absolute h-[5%] w-full bottom-0 bg-black"></div> */}
-    <div className="relative border-2 border-gray-100 bg-cyan-50/5
+    <div className="relative border-1 border-gray-100 bg-cyan-50/5 py-4
     overflow-x-hidden
     flex flex-col justify-center items-center 
-    w-[100%] sm:w-[632px] md:w-[760px] lg:w-[1016px] backdrop-blur-md rounded-md
+    w-[100%] sm:w-[626px] md:w-[752px] lg:w-[992px] backdrop-blur-md rounded-md
     gap-2">
 
-        <div className="relative flex flex-row justify-between items-center w-[100%] pl-2">
+        <div className="relative flex flex-row justify-between items-center w-[100%] p-2 lg:p-4">
                 
-                <div className="relative  text-[1rem] sm:text-2xl md:text-3xl tracking-[5px] lg:text-4xl leading-none 
+                <div className="relative  text-[1.25rem] sm:text-3xl md:text-4xl tracking-[5px] lg:text-5xl leading-none 
                 scale-y-120 pl-2 -skew-x-28
                 md:tracking-[10px] font-extrabold"
                 
                 >{title}</div>
 
-                <div className="flex flex-row justify-between items-center gap-4">
+                <div className="flex flex-row justify-between items-center gap-4 pr-1">
                     
                     <a 
                         href = {repo}
@@ -70,7 +70,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                 </svg>
         </div>
 
-        <div className="text-base sm:text-xl p-3 rounded-sm">{description}</div>
+        <div className="text-base sm:text-xl p-2 lg:p-4 rounded-sm">{description}</div>
     
         <div
             className="inline-flex flex-row w-[100%] flex-wrap gap-2 items-center p-2 px-3">
@@ -89,10 +89,10 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
 const Projects = function({children}:PropsWithChildren){
 
     return(<div id="projects"
-    className="flex flex-col justify-between items-center w-[100%]" >
-        <div className="inline-flex justify-center items-center border
-         w-[100%] sm:w-[632px] md:w-[760px] lg:w-[1016px] p-4 lg:p-8 backdrop-blur-md
-        bg-black/25"><span className=" text-center font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-8xl tracking-[4vw]">PROJECTS</span></div>
+    className="relative flex flex-col justify-between items-center w-[100%]" >
+        <div className="relative inline-flex justify-center items-center border
+        w-[96%] sm:w-[626px] md:w-[752px] lg:w-[992px] p-4 lg:p-8 backdrop-blur-md
+        bg-black/25"><span className="text-center font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-8xl tracking-[4vw]">PROJECTS</span></div>
         {children}
         
     </div>)
