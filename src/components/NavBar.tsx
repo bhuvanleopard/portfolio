@@ -26,7 +26,7 @@ const NavBar = function(){
         </nav>
         
 
-        <button onClick= {toggleMobileMenu} className="text-4xl md:hidden z-50 cursor-pointer">
+        <button onClick= {toggleMobileMenu} className="text-4xl md:hidden z-50 cursor-pointer backdrop-blur-sm">
             <FiMenu/>
         </button>
 

@@ -20,12 +20,12 @@ flex flex-col justify-between items-center">
       
     > 
 
-      <image href={profile} preserveAspectRatio="xMidYMid slice" width="70" height="70" x="14.5" y="20" opacity="0.2"/>
-      <image href={profile} preserveAspectRatio="xMidYMid slice" width="70" height="70" x="15.5" y="20" opacity="0.2"/>
+      <image href={profile} preserveAspectRatio="xMidYMid slice" width="70" height="70" x="14.5" y="19.5" opacity="0.2"/>
+      <image href={profile} preserveAspectRatio="xMidYMid slice" width="70" height="70" x="15.5" y="20.5" opacity="0.2"/>
       <image href={profile} preserveAspectRatio="xMidYMid slice" width="70" height="70" x="15" y="20" />
 
-      <rect width="100" fill="#202c38" height="13" y="0" z="0"/>
-      <rect width="100" fill="#2b202a" height="13" y="88" z="0"/>
+      <rect width="110" fill="#202c38" height="13" y="0" z="0"/>
+      <rect width="110" fill="#2b202a" height="13" x="0" y="88" z="0"/>
       
       
       <text
@@ -50,7 +50,7 @@ flex flex-col justify-between items-center">
       // fill="#c4c2c4"
       stroke="white"
       fill="white"
-      opacity="0.9"
+      opacity="0.95"
       fontSize="10"
       lengthAdjust="spacingAndGlyphs"
       y="97.5"

@@ -1,23 +1,8 @@
-import NavBar from "./NavBar"
-import ResumeBtn from "./ResumeBtn";
-const Header = function(){
+import Resume from "../assets/Bhuvan_Chavan_Resume.pdf"
 
-    return(
+const ResumeBtn = ()=>{
 
-        <header className='
-        
-        z-100
-        fixed
-        top-0
-        w-full h-[4rem]
-        shadow-2xs
-        flex flex-row justify-between items-center
-        px-4 py-2
-        md:px-4 lg:px-16
-        '>
-            <NavBar/>
-                <ResumeBtn/>
-                {/* <a  className="text-2xl tracking-widest font-extrabold text-white bg-white/5 
+    return (<a  className="text-2xl h-[100%] tracking-widest font-extrabold text-white bg-white/5 
                     inline-flex items-center justify-between gap-6 cursor-pointer py-1 px-2 
                     -skew-x-28 border border-white/8 backdrop-blur-sm rounded-sm"
                     href={Resume}
@@ -34,9 +19,7 @@ const Header = function(){
                         document.body.removeChild(link);
 
                         e.preventDefault();}}>RESUME
-                </a> */}
-        </header>
-    )
+                </a>)
 };
 
-export default Header
+export default ResumeBtn

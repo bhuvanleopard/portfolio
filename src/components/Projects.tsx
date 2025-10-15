@@ -16,16 +16,21 @@ interface CardI {
 
 const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>{
 
-    return(<div className="relative overflow-x-hidden bg-red-500
+    return(
+    <div className="relative h-[100vh] w-full flex items-center justify-center">
+    {/* <div className="absolute h-[5%] w-full bottom-0 bg-black"></div> */}
+    <div className="relative border-2 border-gray-100 bg-cyan-50/5
+    overflow-x-hidden
     flex flex-col justify-center items-center 
-    sm:w-[440px] md:w-[768px] lg:w-[1024px] h-full ">
+    w-[100%] sm:w-[632px] md:w-[760px] lg:w-[1016px] p-2 lg:p-2 backdrop-blur-md rounded-md
+    gap-2">
 
-        <div className="relative flex justify-between items-center w-[100%] py-2">
-
-            <div className="relative flex flex-row justify-between  items-center">
+        <div className="relative flex flex-row justify-between items-center w-[100%] pl-2">
                 
-                <div className="relative sm:text-6xl sm:tracking-[5px] md:text-8xl 
-                tracking-[10px] font-extrabold"
+                <div className="relative  text-[1rem] sm:text-2xl md:text-3xl tracking-[5px] lg:text-4xl leading-none 
+                scale-y-120 pl-2 -skew-x-28
+                md:tracking-[10px] font-extrabold"
+                
                 >{title}</div>
 
                 <div className="flex flex-row justify-between items-center gap-4">
@@ -34,7 +39,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                         href = {repo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 sm:text-3xl md:text-5xl inline-flex border-2 bg-black"
+                        className="p-2 text-[1rem]  md:text-3xl lg:text-5xl leading-none inline-flex border-2 bg-transparent rounded-md"
                     >
                         <FiGithub/>
                     </a>
@@ -43,31 +48,51 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                         href = {live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 sm:text-3xl md:text-5xl inline-flex border-2 bg-black"
+                        className="p-2 text-[1rem] md:text-3xl lg:text-5xl leading-none inline-flex border-2 bg-transparent rounded-md"
                     >
                         <FaExternalLinkAlt/>
                     </a>
                 </div>
 
             </div>
-        </div>
-        
-        <img src={image} className="h-[50vh] shadow-cyan-500 border-2"/>
-        
-        <div
-        className="inline-flex flex-row w-[100%] justify-between items-center py-2"
-        >{techStack.map((ele,idx)=>(<span className="tracking-widest" key={idx}>{ele}</span>))}
-        </div>
-        
-        <div className="py-2">{description}</div>
 
-    </div>)
-}
+        <div className="relative w-[100%] h-[50vw] sm:h-[320px] md:h-[384px] lg:h-[512px]">
+                <svg 
+                    
+                    className=" border rounded-md p-2 " stroke="rgb(14 165 233)"
+                    width="100%" 
+                    height="100%" 
+                    viewBox="0 0 100 100" 
+                    preserveAspectRatio ="none"
+                    xmlns="http://www.w3.org/2000/svg"> 
+
+                    <image  href={image} preserveAspectRatio="xMidYMid slice" width="100" height="100" x="0" y="0"/>
+                </svg>
+        </div>
+
+        <div className="text-base sm:text-xl p-3 rounded-sm">{description}</div>
+    
+        <div
+            className="inline-flex flex-row w-[100%] flex-wrap gap-2 items-center p-2 px-3">
+            {techStack.map((ele,idx)=>(<span className=" -skew-x-28 tracking-widest text-base first:font-extrabold first:bg-black/50 first:border-white rounded-sm border-1 border-white/25 py-0.5 px-1" key={idx}>{ele}</span>))}
+        </div>
+
+        {/* <div className=" absolute top-0 h-[2px] w-[100%] bg-gray-100"></div> */}
+        {/* <div className=" absolute bottom-0 h-[8rem] w-[100%] 
+        bg-[linear-gradient(to_right,theme(colors.cyan.400),theme(colors.blue.400),theme(colors.cyan.400),theme(colors.white),theme(colors.pink.500))]
+        "></div> */}
+
+    </div>
+
+    </div>)}
+
 const Projects = function({children}:PropsWithChildren){
 
     return(<div id="projects"
-    className="scroll-mt-28 flex flex-col justify-between items-center" >
-
+    className="flex flex-col justify-between items-center w-[100%]" >
+        <div className="inline-flex justify-center items-center border
+         w-[100%] sm:w-[632px] md:w-[760px] lg:w-[1016px] lg:p-2 backdrop-blur-md
+        bg-black/25 p-2"><span className=" text-center font-extrabold text-8xl tracking-[4vw]">PROJECTS</span></div>
         {children}
         
     </div>)

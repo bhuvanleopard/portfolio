@@ -11,8 +11,9 @@
 
 @theme {
 
-  --animate-wiggle: wiggle 1s ease-in-out infinite;
-  --animate-flow: flow 4s ease-in-out infinite;
+  --animate-wiggle: wiggle 24s ease-in-out24inease-in-out infinite;
+  --animate-flow: flow 24s ease-in-out24inease-in-out infinite;
+  --animate-gradient: gradient 24s ease-in-out infinite;
   
   --breakpoint-sms: 1rem;
   --breakpoint-lgs: 64rem;
@@ -32,13 +33,20 @@
       transform: rotate(3deg);
     }
   }
+
+  @keyframes gradient {
+
+    0%, 100% { backgroundPosition: '0% 50%' };
+    50%{ backgroundPosition: '100% 50%' };
+  }
+
 }
 
 @layer base{
 
     body{
 
-        @apply  overflow-x-hidden bg-gradient-to-r from-gray-950 via-gray-900 to-gray-950
+        @apply  bg-gradient-to-r from-gray-950 via-gray-900 to-gray-950
     }
     
 }
@@ -136,3 +144,38 @@
   height: 40%;
   width: 100%;
 }
+
+.gradient-animation {
+    background: linear-gradient(270deg,#ef05f7,#ffffff, #05f7f7,#ef05f7,#ffffff, #05f7f7,);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 24s ease-in-out infinite;
+    -moz-animation: AnimationName 24s ease-in-out infinite;
+    -o-animation: AnimationName 24s ease-in-out infinite;
+    animation: AnimationName 24s ease-in-out infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* *{
+  min-height: fit-content;
+} */
