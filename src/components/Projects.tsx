@@ -17,12 +17,12 @@ interface CardI {
 const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>{
 
     return(
-    <div className="relative h-[100vh] w-full flex items-center justify-center">
+    <div className="relative h-[100vh] w-full flex items-center justify-center p-4 lg:p-8">
     {/* <div className="absolute h-[5%] w-full bottom-0 bg-black"></div> */}
     <div className="relative border-2 border-gray-100 bg-cyan-50/5
     overflow-x-hidden
     flex flex-col justify-center items-center 
-    w-[100%] sm:w-[632px] md:w-[760px] lg:w-[1016px] p-2 lg:p-2 backdrop-blur-md rounded-md
+    w-[100%] sm:w-[632px] md:w-[760px] lg:w-[1016px] backdrop-blur-md rounded-md
     gap-2">
 
         <div className="relative flex flex-row justify-between items-center w-[100%] pl-2">
@@ -91,8 +91,8 @@ const Projects = function({children}:PropsWithChildren){
     return(<div id="projects"
     className="flex flex-col justify-between items-center w-[100%]" >
         <div className="inline-flex justify-center items-center border
-         w-[100%] sm:w-[632px] md:w-[760px] lg:w-[1016px] lg:p-2 backdrop-blur-md
-        bg-black/25 p-2"><span className=" text-center font-extrabold text-8xl tracking-[4vw]">PROJECTS</span></div>
+         w-[100%] sm:w-[632px] md:w-[760px] lg:w-[1016px] p-4 lg:p-8 backdrop-blur-md
+        bg-black/25"><span className=" text-center font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-8xl tracking-[4vw]">PROJECTS</span></div>
         {children}
         
     </div>)
