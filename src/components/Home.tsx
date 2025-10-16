@@ -6,6 +6,9 @@ import ImgCaterer from "../assets/catering-service.webp";
 import ImgVote from "../assets/voting-system.webp";
 import ImgTask from "../assets/task-manager-thumbail.webp";
 import Intro from "./Intro";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import ResumeBtn from "./ResumeBtn";
 
 const {ProjectCard, Projects} = Project
 
@@ -21,18 +24,45 @@ const Home = function(){
     
     id="main-content">
         <div className="relative h-[100vh] flex flex-col justify-center items-center 
-        gap-16 scroll-mt-[4rem] rounded-md ">
-            <div className="relative h-[50vw] w-[50vw] sm:w-[320px] sm:h-[320px] md:w-[384px] md:h-[384px] lg:h-[512px] lg:w-[512px] 
-            flex justify-center items-center border-2 rounded-md">
-            <AboutMe profession="FULL-STACK DEV" name="BHUVAN CHAVAN" profile={Profile}/>
-            </div>
-            
-            <div className="relative w-[100%] sm:w-[632px] md:w-[760px] lg:w-[1016px] p-4 lg:p-8 ">
-            <Intro intro="Dynamic and detail-oriented Full Stack Developer with hands-on experience in building scalable and robust
+        gap-8 scroll-mt-[4rem] rounded-md ">
+
+
+            <div className="relative w-[100%] sm:w-[626px] md:w-[752px] lg:w-[992px] p-4 lg:p-8">
+            <Intro intro="Hi, I'm a Full Stack Developer with hands-on experience in building scalable and robust
                 web applications. Proficient in a variety of front-end, back-end, and system design technologies, with a
                 strong commitment to delivering high-quality solutions. Skilled in problem-solving and team collaboration,
                 with a strong foundation in data structures and algorithms."/>
             </div>
+
+            <div className="relative h-[50vw] w-[50vw] sm:w-[320px] sm:h-[320px] md:w-[384px] md:h-[384px] lg:h-[512px] lg:w-[512px] 
+            flex justify-center items-center border-2 rounded-md">
+            <AboutMe profession="FULL-STACK DEV" name="BHUVAN CHAVAN" profile={Profile}/>
+            </div>
+
+
+            <div className="relative w-[50vw] sm:w-[320px] md:w-[384px] lg:w-[512px]
+            flex justify-between items-center rounded-md">
+                <div className="skew-x-28"><ResumeBtn/></div>
+                <div className="flex justify-between items-center gap-6">
+                <a 
+                    href = ""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 text-[1rem]  md:text-md lg:text-xl leading-none inline-flex border-2 bg-transparent rounded-md"
+                >
+                    <FiGithub/>
+                </a>
+                <a 
+                    href = ""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 text-[1rem]  md:text-md lg:text-xl leading-none inline-flex border-2 bg-transparent rounded-md"
+                >
+                    <FaLinkedinIn/>
+                </a>
+                </div>
+            </div>
+
         </div>
         
         {/* <div className="relative sm:w-[640px] md:w-[768px] lg:w-[1024px] h-"> */}

@@ -1,6 +1,6 @@
 const Intro = ({intro}:{intro:string}) => {
   return (
-    <div className="w-[100%] h-[100%] text-center border p-2
+    <div className="w-[94%] h-[100%] text-center
     text-base sm:text-xl">
       {intro}
     </div>
