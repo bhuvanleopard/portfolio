@@ -26,18 +26,18 @@ const NavBar = function(){
         </nav>
         
 
-        <button onClick= {toggleMobileMenu} className="text-4xl md:hidden z-50 cursor-pointer backdrop-blur-sm">
+        <button onClick= {toggleMobileMenu} className="text-4xl md:hidden z-100 cursor-pointer backdrop-blur-sm">
             <FiMenu/>
         </button>
 
         
-        <div id='mobileMenu' className="hidden fixed items-center top-[4rem]  w-full h-full bottom-0 right-0 left-0 p-4 md:hidden
+        <div id='mobileMenu' className="hidden fixed items-center pt-[8rem]  w-full h-full bottom-0 right-0 left-0 p-4 md:hidden
          bg-black/90 z-90">
             <nav className="flex flex-col gap-12 items-center px-4">
-            <a onClick={toggleMobileMenu} className="cursor-pointer text-2xl tracking-[8px] transition-colors hover:text-gray-300 z-50 font-extrabold px-6 py-3 border-white/50 text-center" href="#aboutMe">HOME</a>
-            <a onClick={toggleMobileMenu} className="cursor-pointer text-2xl tracking-[8px] transition-colors hover:text-gray-300 z-50 font-extrabold px-6 py-3 border-white/50 text-center" href="#skills">SKILLS</a>
-            <a onClick={toggleMobileMenu} className="cursor-pointer text-2xl tracking-[8px] transition-colors hover:text-gray-300 z-50 font-extrabold px-6 py-3 border-white/50 text-center" href="#projects">PROJECTS</a>
-            <a onClick={toggleMobileMenu} className="cursor-pointer text-2xl tracking-[8px] transition-colors hover:text-gray-300 z-50 font-extrabold px-6 py-3 border-white/50 text-center" href="#contact">CONTACT</a>
+            <a onClick={toggleMobileMenu} className="cursor-pointer text-2xl tracking-[8px] transition-colors hover:text-gray-300 z-100 font-extrabold px-6 py-3 border-white/50 text-center" href="#aboutMe">HOME</a>
+            <a onClick={toggleMobileMenu} className="cursor-pointer text-2xl tracking-[8px] transition-colors hover:text-gray-300 z-100 font-extrabold px-6 py-3 border-white/50 text-center" href="#skills">SKILLS</a>
+            <a onClick={toggleMobileMenu} className="cursor-pointer text-2xl tracking-[8px] transition-colors hover:text-gray-300 z-100 font-extrabold px-6 py-3 border-white/50 text-center" href="#projects">PROJECTS</a>
+            <a onClick={toggleMobileMenu} className="cursor-pointer text-2xl tracking-[8px] transition-colors hover:text-gray-300 z-10 font-extrabold px-6 py-3 border-white/50 text-center" href="#contact">CONTACT</a>
             </nav>
         </div>
     

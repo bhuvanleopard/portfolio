@@ -9,6 +9,7 @@ import Intro from "./Intro";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import ResumeBtn from "./ResumeBtn";
+import LetterGlitch from "./LetterGlitch";
 
 const {ProjectCard, Projects} = Project
 
@@ -23,27 +24,25 @@ const Home = function(){
     flex flex-col justify-between items-center"
     
     id="main-content">
-        <div className="relative h-[100vh] flex flex-col justify-center items-center 
-        gap-8 scroll-mt-[4rem] rounded-md ">
 
+        <div className="h-[100vh] min-h-fit flex justify-center items-center">
+        <div className="relative min-h-fit h-fit flex flex-col justify-center items-center
+        gap-8 scroll-mt-[4rem] rounded-md border-8 border-white/10 overflow-hidden">
 
-            <div className="relative w-[100%] sm:w-[626px] md:w-[752px] lg:w-[992px] p-4 lg:p-8">
-            <Intro intro="Hi, I'm a Full Stack Developer with hands-on experience in building scalable and robust
-                web applications. Proficient in a variety of front-end, back-end, and system design technologies, with a
-                strong commitment to delivering high-quality solutions. Skilled in problem-solving and team collaboration,
-                with a strong foundation in data structures and algorithms."/>
-            </div>
-
-            <div className="relative h-[50vw] w-[50vw] sm:w-[320px] sm:h-[320px] md:w-[384px] md:h-[384px] lg:h-[512px] lg:w-[512px] 
-            flex justify-center items-center border-2 rounded-md">
-            <AboutMe profession="FULL-STACK DEV" name="BHUVAN CHAVAN" profile={Profile}/>
-            </div>
-
-
-            <div className="relative w-[50vw] sm:w-[320px] md:w-[384px] lg:w-[512px]
+        {/* <div className="">     */}
+        <LetterGlitch 
+      
+        glitchColors={["cyan", "white", "purple"]} 
+        glitchSpeed={50} 
+        centerVignette={false} 
+        outerVignette={true} 
+        smooth={true} 
+        characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$&*()-_+=/[]{};:<>.,0123456789" />
+        {/* </div> */}
+            <div className="relative w-[100%]  backdrop-blur-[2px] p-4 
             flex justify-between items-center rounded-md">
                 <div className="skew-x-28"><ResumeBtn/></div>
-                <div className="flex justify-between items-center gap-6">
+                <div className="flex justify-between items-center gap-6 backdrop-blur-[2px]">
                 <a 
                     href = ""
                     target="_blank"
@@ -63,8 +62,23 @@ const Home = function(){
                 </div>
             </div>
 
+            <div className="relative h-[50vw] w-[50vw] sm:w-[320px] sm:h-[320px] md:w-[384px] md:h-[384px] lg:h-[512px] lg:w-[512px] 
+            flex justify-center items-center border-5 border-white/10 rounded-md  backdrop-blur-[1px]">
+            <AboutMe profession="FULL-STACK DEV" name="BHUVAN CHAVAN" profile={Profile}/>
+            </div>
+
+            <div className="relative flex justify-center items-center 
+            w-[100%] sm:w-[626px] md:w-[752px] lg:w-[992px] 
+            backdrop-blur-[4px]">
+            
+            <Intro intro="Hi, I'm a Full Stack Developer with hands-on experience in building scalable and robust
+                web applications. Proficient in a variety of front-end, back-end, and system design technologies, with a
+                strong commitment to delivering high-quality solutions. Skilled in problem-solving and team collaboration,
+                with a strong foundation in data structures and algorithms."/>
+            </div>
+            
         </div>
-        
+        </div>
         {/* <div className="relative sm:w-[640px] md:w-[768px] lg:w-[1024px] h-"> */}
         <Projects>
             <ProjectCard 

@@ -17,7 +17,7 @@ interface CardI {
 const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>{
 
     return(
-    <div className="relative h-[100vh] w-full flex items-center justify-center p-4 lg:p-8">
+    <div className="relative h-[100vh] min-h-fit w-full flex items-center justify-center p-4 lg:p-8">
     {/* <div className="absolute h-[5%] w-full bottom-0 bg-black"></div> */}
     <div className="relative border-1 border-gray-100 bg-cyan-50/5 py-4
     overflow-x-hidden
@@ -89,7 +89,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
 const Projects = function({children}:PropsWithChildren){
 
     return(<div id="projects"
-    className="relative flex flex-col justify-between items-center w-[100%]" >
+    className="relative flex flex-col justify-between items-center w-[100%] min-h-fit" >
         <div className="relative inline-flex justify-center items-center border
         w-[96%] sm:w-[626px] md:w-[752px] lg:w-[992px] p-4 lg:p-8 backdrop-blur-md
         bg-black/25"><span className="text-center font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-8xl tracking-[4vw]">PROJECTS</span></div>

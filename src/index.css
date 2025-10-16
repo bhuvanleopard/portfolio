@@ -42,14 +42,6 @@
 
 }
 
-@layer base{
-
-    body{
-
-        @apply  bg-gradient-to-r from-gray-950 via-gray-900 to-gray-950
-    }
-    
-}
 
 @layer components{
   
@@ -116,28 +108,6 @@
   }
 }
 
-
-
-
-.hero-container {
-  /* Set the background image */
-  /* background-image: url('../public/profile.png'); */
-  background-image: url("./assets/profile.png");
-
-  /* Control how the image behaves */
-  background-size: cover;       /* Scale to cover the element */
-  background-position: center;  /* Center the image */
-  background-repeat: no-repeat; /* Do not tile the image */
-
-  /* border-radius: 100%; */
-  /* You must give the element a size to see the background */
-  /* height: 20vh; 16rem, equivalent to Tailwind's h-64 */
-  /* width: 20vh; */
-  /* transform: translateX(-5%) ; */
- 
-
-}
-
 .about-me-container{
 
   container-type: size;
@@ -176,6 +146,16 @@
     100%{background-position:0% 50%}
 }
 
-/* *{
-  min-height: fit-content;
+/* body{
+
+  background-color: black;
 } */
+
+@layer base{
+
+    body{
+
+        @apply  bg-gradient-to-r from-gray-950 via-gray-900 to-gray-950
+    }
+    
+}
