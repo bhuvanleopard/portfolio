@@ -44,7 +44,7 @@ const AboutMe = ({content}:{content:string}) => {
         <div
         className="
         md:w-[80%]
-        text-base md:text-[18px]
+        text-base lg:text-[18px]
         font-bold
         text-center
         p-[4px]">

@@ -23,9 +23,9 @@ const Home = function(){
     id="main-content">
 
         <Intro name="BHUVAN." s1="HI! MY NAME IS" s2="I'M A FULL STACK DEVELOPER."/>
-        <div className="p-[8px]"></div>
+        <div className="p-[32px]"></div>
         <Profile profile={ProfileImg}/>
-        <div className="p-[8px]"></div>
+        <div className="p-[32px]"></div>
         <AboutMe
             content="A FULL-STACK DEVELOPER WITH HANDS-ON EXPERIENCE IN BUILDING SCALABLE AND ROBUST WEB APPLICATIONS. 
             PROFICIENT IN A VARIETY OF FRONT-END, 
