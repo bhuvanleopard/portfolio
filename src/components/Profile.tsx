@@ -9,21 +9,19 @@ p-[4px]
 w-[150px] sm:w-[214px] md:w-[256px] lg:w-[342px]
 h-[150px] sm:h-[214px] md:h-[256px] lg:h-[342px]
 perspective-[500px]
-rounded-sm">
+rounded-sm
+opacity-100">
 <div 
 className="
-
-shadow-[0_0_10px_2px_theme(colors.sky.50/0.20)]
+border-4 border-white/5
 rounded-sm
-rotate-x-[-5deg]
 relative
-bg-gradient-to-t from-cyan-400/0 via-white/0 to-[#f0f]/0
 flex flex-col justify-between items-center">
 
     <svg
       className="
         rounded-sm
-        bg-gradient-to-r from-cyan-400 via-white to-pink-400"
+        bg-gradient-to-r from-[#00a3a3] via-white to-[#7a0278]/100"
       stroke="transparent"
       width="100%" 
       height="100%" 

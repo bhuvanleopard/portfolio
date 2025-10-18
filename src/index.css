@@ -107,6 +107,11 @@
     
     @apply text-white
   }
+  
+  body{
+
+    @apply bg-black
+  }
 }
 
 .about-me-container{

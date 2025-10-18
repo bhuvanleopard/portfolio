@@ -1,3 +1,4 @@
+import { FluidBackground } from "./FluidBackground";
 
 const Background: React.FC = () => {
   
@@ -13,8 +14,10 @@ const Background: React.FC = () => {
       smooth={true} 
       characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$&*()-_+=/[]{};:<>.,0123456789" />
        */}
-      {/* <div className="absolute z-20 w-[25%] h-[100%] bg-gradient-to-l from-transparent via-[#ededed]/20 to-transparent"></div> */}
-      <div className="w-[100%] h-[100%] bg-black"></div>
+      {/* <div className="absolute z-20 w-[100%] h-[100%] bg-gradient-to-l from-[#262626] via-[#262626] to-black"></div> */}
+      {/* <div className="w-[100%] h-[100%] bg-black"></div> */}
+     
+     <FluidBackground/>
       {/* <div className="w-[100%] h-[100%] bg-black"></div> */}
         {/* <img src="bg-01.jpg" alt="." className="absolute  opacity-50"/> */}
         {/* <div className="absolute w-[75%] h-[50%] border-transparent border-8 shadow-2xl bg-cyan-200/20 z-13"></div> */}
