@@ -65,8 +65,21 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                     viewBox="0 0 100 100" 
                     preserveAspectRatio ="none"
                     xmlns="http://www.w3.org/2000/svg"> 
-
-                    <image  href={image} preserveAspectRatio="xMidYMid slice" width="100" height="100" x="0" y="0"/>
+                    
+                    <defs>
+                        <filter id="grayscale">
+                        <feColorMatrix type="saturate" values="0" />
+                        </filter>
+                    </defs>
+                    
+                    <image  
+                        href={image} 
+                        preserveAspectRatio="xMidYMid slice" 
+                        width="100" 
+                        height="100" 
+                        x="0" y="0"
+                        // filter="url(#grayscale)"
+                        />
                 </svg>
         </div>
 

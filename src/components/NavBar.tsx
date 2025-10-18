@@ -16,7 +16,7 @@ const NavBar = function(){
             mainSection?.classList.remove("overflow-hidden")
         }
     }
-    return (<>
+    return (<div>
 
         <nav className="hidden md:flex justify-center items-center gap-8">
             <a className="nav-bar-item" href="#skills">SKILLS</a>
@@ -41,7 +41,7 @@ const NavBar = function(){
             </nav>
         </div>
     
-    </>)
+    </div>)
 };
 
 export default NavBar;

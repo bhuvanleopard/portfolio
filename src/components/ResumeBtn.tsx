@@ -2,9 +2,9 @@ import Resume from "../assets/Bhuvan_Chavan_Resume.pdf"
 
 const ResumeBtn = ()=>{
 
-    return (<a  className="text-2xl h-[100%] tracking-widest font-extrabold text-white bg-white/5 
+    return (<a  className="text-[16px] md:text-[24px] lg:text-[32px] h-[100%] tracking-widest font-extrabold text-white bg-white/6 
                     inline-flex items-center justify-between gap-6 cursor-pointer py-1 px-2 
-                    -skew-x-28 border border-white/8 backdrop-blur-sm rounded-sm z-100"
+                    backdrop-blur-sm rounded-sm z-100"
                     href={Resume}
                     target="_blank"
                     rel="noopener noreferrer"

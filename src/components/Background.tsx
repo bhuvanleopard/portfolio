@@ -3,7 +3,7 @@ const Background: React.FC = () => {
   
     return (
 
-    <div className="fixed w-[100%] h-[100vh] z-10">
+    <div className="fixed flex justify-center items-center w-[100%] h-[100%] z-10">
       {/* <LetterGlitch 
       
       glitchColors={["cyan", "white", "purple"]} 
@@ -13,8 +13,9 @@ const Background: React.FC = () => {
       smooth={true} 
       characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$&*()-_+=/[]{};:<>.,0123456789" />
        */}
-      <div className=" w-[100%] h-[100vh] bg-gradient-to-l from-[#001629]/25 via-white/5 to-[#001629]/25"></div>
-      
+      {/* <div className="absolute z-20 w-[25%] h-[100%] bg-gradient-to-l from-transparent via-[#ededed]/20 to-transparent"></div> */}
+      <div className="w-[100%] h-[100%] bg-black"></div>
+      {/* <div className="w-[100%] h-[100%] bg-black"></div> */}
         {/* <img src="bg-01.jpg" alt="." className="absolute  opacity-50"/> */}
         {/* <div className="absolute w-[75%] h-[50%] border-transparent border-8 shadow-2xl bg-cyan-200/20 z-13"></div> */}
         {/* <div className="absolute top-[50%] w-[50%] h-[60%] border-8 border-transparent shadow-2xl bg-gray-500/30 z-11"></div> */}

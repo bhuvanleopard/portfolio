@@ -1,15 +1,12 @@
-import AboutMe from "./AboutMe";
 import Contact from "./Contact";
-import Profile from "../assets/profile-100.png";
+import ProfileImg from "../assets/profile-100.png";
 import Project from "./Projects";
 import ImgCaterer from "../assets/catering-service.webp";
 import ImgVote from "../assets/voting-system.webp";
 import ImgTask from "../assets/task-manager-thumbail.webp";
 import Intro from "./Intro";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
-import ResumeBtn from "./ResumeBtn";
-import LetterGlitch from "./LetterGlitch";
+import Profile from "./Profile";
+import AboutMe from "./AboutMe";
 
 const {ProjectCard, Projects} = Project
 
@@ -18,67 +15,24 @@ const Home = function(){
     return(<main 
     className="
     z-20
-    pt-[4rem]
+    pt-[8rem]
     relative
     overflow-x-hidden
     flex flex-col justify-between items-center"
     
     id="main-content">
 
-        <div className="h-[100vh] min-h-fit flex justify-center items-center">
-        <div className="relative min-h-fit h-fit flex flex-col justify-center items-center
-        gap-8 scroll-mt-[4rem] rounded-md border-8 border-white/10 overflow-hidden">
-
-        {/* <div className="">     */}
-        <LetterGlitch 
-      
-        glitchColors={["cyan", "white", "purple"]} 
-        glitchSpeed={50} 
-        centerVignette={false} 
-        outerVignette={true} 
-        smooth={true} 
-        characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$&*()-_+=/[]{};:<>.,0123456789" />
-        {/* </div> */}
-            <div className="relative w-[100%]  backdrop-blur-[2px] p-4 
-            flex justify-between items-center rounded-md">
-                <div className="skew-x-28"><ResumeBtn/></div>
-                <div className="flex justify-between items-center gap-6 backdrop-blur-[2px]">
-                <a 
-                    href = ""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 text-[1rem]  md:text-md lg:text-xl leading-none inline-flex border-2 bg-transparent rounded-md"
-                >
-                    <FiGithub/>
-                </a>
-                <a 
-                    href = ""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 text-[1rem]  md:text-md lg:text-xl leading-none inline-flex border-2 bg-transparent rounded-md"
-                >
-                    <FaLinkedinIn/>
-                </a>
-                </div>
-            </div>
-
-            <div className="relative h-[50vw] w-[50vw] sm:w-[320px] sm:h-[320px] md:w-[384px] md:h-[384px] lg:h-[512px] lg:w-[512px] 
-            flex justify-center items-center border-5 border-white/10 rounded-md  backdrop-blur-[1px]">
-            <AboutMe profession="FULL-STACK DEV" name="BHUVAN CHAVAN" profile={Profile}/>
-            </div>
-
-            <div className="relative flex justify-center items-center 
-            w-[100%] sm:w-[626px] md:w-[752px] lg:w-[992px] 
-            backdrop-blur-[4px]">
-            
-            <Intro intro="Hi, I'm a Full Stack Developer with hands-on experience in building scalable and robust
-                web applications. Proficient in a variety of front-end, back-end, and system design technologies, with a
-                strong commitment to delivering high-quality solutions. Skilled in problem-solving and team collaboration,
-                with a strong foundation in data structures and algorithms."/>
-            </div>
-            
-        </div>
-        </div>
+        <Intro name="BHUVAN." s1="HI! MY NAME IS" s2="I'M A FULL STACK DEVELOPER."/>
+        <div className="p-[8px]"></div>
+        <Profile profile={ProfileImg}/>
+        <div className="p-[8px]"></div>
+        <AboutMe
+            content="A FULL-STACK DEVELOPER WITH HANDS-ON EXPERIENCE IN BUILDING SCALABLE AND ROBUST WEB APPLICATIONS. 
+            PROFICIENT IN A VARIETY OF FRONT-END, 
+            BACK-END, AND SYSTEM DESIGN TECHNOLOGIES, 
+            WITH A STRONG COMMITMENT TO DELIVERING HIGH-QUALITY SOLUTIONS. 
+            SKILLED IN PROBLEM-SOLVING AND TEAM COLLABORATION, 
+            WITH A STRONG FOUNDATION IN DATA STRUCTURES AND ALGORITHMS."/>
         {/* <div className="relative sm:w-[640px] md:w-[768px] lg:w-[1024px] h-"> */}
         <Projects>
             <ProjectCard 

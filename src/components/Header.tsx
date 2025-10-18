@@ -9,11 +9,11 @@ const Header = function(){
         z-100
         fixed
         top-0
-        w-full h-[4rem]
+        w-[100%] h-[4rem]
         shadow-2xs
         flex flex-row justify-between items-center
         px-4 py-2
-        md:px-4 lg:px-16
+        md:px-[16px] lg:px-[32px]
         '>
             <NavBar/>
                 <ResumeBtn/>
