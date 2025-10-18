@@ -8,12 +8,10 @@ relative
 p-[4px]
 w-[150px] sm:w-[214px] md:w-[256px] lg:w-[342px]
 h-[150px] sm:h-[214px] md:h-[256px] lg:h-[342px]
-perspective-[500px]
 rounded-sm
 opacity-100">
 <div 
 className="
-border-4 border-white/5
 rounded-sm
 relative
 flex flex-col justify-between items-center">
@@ -21,7 +19,8 @@ flex flex-col justify-between items-center">
     <svg
       className="
         rounded-sm
-        bg-gradient-to-r from-[#00a3a3] via-white to-[#7a0278]/100"
+        bg-gradient-to-r
+        from-[#00a3a3] via-white to-[#7a0278]/75"
       stroke="transparent"
       width="100%" 
       height="100%" 

@@ -15,24 +15,24 @@ const Home = function(){
     return(<main 
     className="
     z-20
-    pt-[8rem]
     relative
     overflow-x-hidden
     flex flex-col justify-between items-center"
     
     id="main-content">
-
-        <Intro name="BHUVAN." s1="HI! MY NAME IS" s2="I'M A FULL STACK DEVELOPER."/>
+        
+        <div className="flex flex-col justify-center items-center min-h-[100vh]">
+        <Intro name="BHUVAN" s1="HI! MY NAME IS" s2="I'M A FULL STACK DEVELOPER."/>
         <div className="p-[32px]"></div>
         <Profile profile={ProfileImg}/>
-        <div className="p-[32px]"></div>
         <AboutMe
-            content="A FULL-STACK DEVELOPER WITH HANDS-ON EXPERIENCE IN BUILDING SCALABLE AND ROBUST WEB APPLICATIONS. 
-            PROFICIENT IN A VARIETY OF FRONT-END, 
-            BACK-END, AND SYSTEM DESIGN TECHNOLOGIES, 
-            WITH A STRONG COMMITMENT TO DELIVERING HIGH-QUALITY SOLUTIONS. 
-            SKILLED IN PROBLEM-SOLVING AND TEAM COLLABORATION, 
+            content="A FULL STACK DEVELOPER WITH HANDS ON EXPERIENCE IN BUILDING SCALABLE AND ROBUST WEB APPLICATIONS. 
+            PROFICIENT IN A VARIETY OF FRONTEND, 
+            BACKEND, AND SYSTEM DESIGN TECHNOLOGIES, 
+            WITH A STRONG COMMITMENT TO DELIVERING HIGH QUALITY SOLUTIONS. 
+            SKILLED IN PROBLEM SOLVING AND TEAM COLLABORATION, 
             WITH A STRONG FOUNDATION IN DATA STRUCTURES AND ALGORITHMS."/>
+        </div>
         {/* <div className="relative sm:w-[640px] md:w-[768px] lg:w-[1024px] h-"> */}
         <Projects>
             <ProjectCard 

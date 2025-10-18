@@ -15,7 +15,7 @@ const Background: React.FC = () => {
       characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$&*()-_+=/[]{};:<>.,0123456789" />
        */}
       {/* <div className="absolute z-20 w-[100%] h-[100%] bg-gradient-to-l from-[#262626] via-[#262626] to-black"></div> */}
-      {/* <div className="w-[100%] h-[100%] bg-black"></div> */}
+      <div className=" absolute w-[100%] h-[100%] bg-black"></div>
      
      <FluidBackground/>
       {/* <div className="w-[100%] h-[100%] bg-black"></div> */}

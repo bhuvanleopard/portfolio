@@ -6,7 +6,7 @@ export const FluidBackground = () => {
   return (
     <div
       id="fluid-container"
-      className="relative w-full h-full overflow-hidden z-30 bg-[#070707]"
+      className="relative w-full h-full overflow-hidden z-30 opacity-80"
     >
       {/* Container for 3D perspective */}
       <motion.div
@@ -24,9 +24,9 @@ export const FluidBackground = () => {
             className="absolute left-0 top-0 w-128 h-128  blur-[100px] lg:w-192 lg:h-192 bg-gradient-to-r from-cyan-400 to-pink-400 lg:blur-[128px]"
             animate={{
                 // Stays fixed horizontally on the left
-                x: ["-50%", "-65%"],
+                x: ["-40%", "-55%"],
                 // Animates vertically
-                y: ["-25%", "-45%"],
+                y: ["-40%", "-55%"],
                 rotate: [360, 0],
                 borderRadius: [
                   "60% 40% 70% 80% / 60% 30% 70% 80%",

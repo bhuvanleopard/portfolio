@@ -2,7 +2,7 @@
 
 *{
     font-family: monospace;
-    color: #ededed;
+    /* color: #ededed; */
     /* border: 1px solid gray;   */
     /* border-radius: 4px; */
     /* text-align: center; */
@@ -81,12 +81,11 @@
       border-2
       border-transparent
       hover:text-cyan-100 z-50  rounded-md
-      hover:border-2 hover:border-white/50
+      hover:border-2 hover:border-cyan-50
       md:text-xl
       font-extrabold
       tracking-widest
       p-2
-      text-cyan-50/75
       backdrop-blur-sm
     }
 
@@ -105,7 +104,7 @@
 
   * {
     
-    @apply text-white
+    @apply text-[#ededed]
   }
   
   body{

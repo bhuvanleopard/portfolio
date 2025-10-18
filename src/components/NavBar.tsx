@@ -1,4 +1,5 @@
 import { FiMenu } from "react-icons/fi";
+import ResumeBtn from "./ResumeBtn";
 const NavBar = function(){
 
     const toggleMobileMenu = ()=>{
@@ -23,10 +24,13 @@ const NavBar = function(){
             <a className="nav-bar-item" href="#projects">PROJECTS</a>
             <a className="nav-bar-item" href="#aboutMe">HOME</a>
             <a className="nav-bar-item" href="#contact">CONTACT</a>
+            <div className="nav-bar-item">
+                <ResumeBtn/>
+            </div>
         </nav>
         
 
-        <button onClick= {toggleMobileMenu} className="relative text-4xl md:hidden z-100 cursor-pointer backdrop-blur-sm">
+        <button onClick= {toggleMobileMenu} className="relative flex text-3xl md:hidden z-100 cursor-pointer backdrop-blur-sm">
             <FiMenu/>
         </button>
 
