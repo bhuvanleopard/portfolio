@@ -30,7 +30,7 @@ const NavBar = function(){
         </nav>
         
 
-        <button onClick= {toggleMobileMenu} className="relative flex text-3xl md:hidden z-100 cursor-pointer backdrop-blur-sm">
+        <button onClick= {toggleMobileMenu} className="relative flex text-4xl md:hidden z-100 cursor-pointer backdrop-blur-sm">
             <FiMenu/>
         </button>
 
