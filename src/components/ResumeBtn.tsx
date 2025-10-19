@@ -10,7 +10,7 @@ const ResumeBtn = ()=>{
                 rel="noopener noreferrer"
                 onClick={(e) => {
                     // window.open("https://drive.google.com/file/d/1z_ErdQcVY_uY1HOaYF4zVBAfq1683iTm/view?usp=sharing", "_blank");
-                        window.open("./Bhuvan_Chavan_Resume.pdf", "_blank");
+                        window.open("https://me.auptimise.com/Bhuvan_Chavan_Resume.pdf", "_blank");
                     const link = document.createElement("a");
                     link.href = Resume;
                     link.download = "Bhuvan_Chavan_Resume.pdf";
