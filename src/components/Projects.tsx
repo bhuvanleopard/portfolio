@@ -17,7 +17,8 @@ interface CardI {
 const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>{
 
     return(
-    <div className="relative h-[100vh] min-h-fit w-full flex items-center justify-center p-4 lg:p-8">
+    <div id="projects" 
+        className="relative h-[100vh] min-h-fit w-full flex items-center justify-center p-4 lg:p-8">
     {/* <div className="absolute h-[5%] w-full bottom-0 bg-black"></div> */}
     <div className="relative border-1 border-gray-100 bg-cyan-50/5 py-4
     overflow-x-hidden

@@ -21,7 +21,8 @@ const Home = function(){
     
     id="main-content">
         
-        <div className="flex flex-col justify-center items-center min-h-[100vh] w-full">
+        <div id="about-me" 
+            className="flex flex-col justify-center items-center min-h-[100vh] w-full">
         <Intro name="BHUVAN" s1="HI! MY NAME IS" s2="I'M A FULL STACK DEVELOPER."/>
         <div className="p-[32px]"></div>
         <Profile profile={ProfileImg}/>
