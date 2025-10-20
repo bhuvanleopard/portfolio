@@ -5,8 +5,8 @@ const SVGIntroBoldWords = ({words, className}: {words:string, className: string}
     <div 
     className="
     relative
-    w-[450px] md:w-[675px]  
-    h-[64px] md:h-[96px] 
+    w-[360px] md:w-[540px]  
+    h-[54px] md:h-[81px] 
     p-[4px]">
         
         <SvgText 
@@ -23,7 +23,7 @@ const SVGIntroBoldWords = ({words, className}: {words:string, className: string}
             fill:"#ededed", 
             textLength: "75",
             lengthAdjust:"spacingAndGlyphs",
-            y:"98", x:"50",
+            y:"97.5", x:"50",
             fontSize:"132",
             fontWeight:"bold"}}/>
     </div>

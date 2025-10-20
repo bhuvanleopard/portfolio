@@ -7,6 +7,7 @@ import ImgTask from "../assets/task-manager-thumbail.webp";
 import Intro from "./Intro";
 import Profile from "./Profile";
 import AboutMe from "./AboutMe";
+import Skills from "./Skills";
 
 const {ProjectCard, Projects} = Project
 
@@ -21,8 +22,6 @@ const Home = function(){
     
     id="main-content">
         
-        <div id="about-me" 
-            className="flex flex-col justify-center items-center min-h-[100vh] w-full">
         <Intro name="BHUVAN" s1="HI! MY NAME IS" s2="I'M A FULL STACK DEVELOPER."/>
         <div className="p-[32px]"></div>
         <Profile profile={ProfileImg}/>
@@ -33,8 +32,9 @@ const Home = function(){
             WITH A STRONG COMMITMENT TO DELIVERING HIGH QUALITY SOLUTIONS. 
             SKILLED IN PROBLEM SOLVING AND TEAM COLLABORATION, 
             WITH A STRONG FOUNDATION IN DATA STRUCTURES AND ALGORITHMS."/>
-        </div>
-        {/* <div className="relative sm:w-[640px] md:w-[768px] lg:w-[1024px] h-"> */}
+        
+        <Skills/>
+        
         <Projects>
             <ProjectCard 
             image={ImgCaterer} 

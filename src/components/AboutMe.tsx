@@ -16,18 +16,18 @@ const AboutMe = ({content}:{content:string}) => {
         <div
         className="
             
-            w-[146px] sm:w-[210px] md:w-[252px] lg:w-[338px]
-            flex justify-center
-            cursor-pointer
-            transition-colors
-            border-2 border-white/50
-            hover:text-cyan-100 z-50  rounded-md
-            hover:border-2 hover:border-cyan-50
-            text-xl md:text-3xl lg:text-4xl
-            font-extrabold
-            tracking-widest
-            p-1
-            backdrop-blur-sm
+                w-[146px] sm:w-[210px] md:w-[252px] lg:w-[338px]
+                flex justify-center
+                cursor-pointer
+                transition-colors
+                border-2 border-white/50
+                hover:text-cyan-100 z-50  rounded-md
+                hover:border-2 hover:border-cyan-50
+                text-xl md:text-3xl lg:text-4xl
+                font-extrabold
+                tracking-widest
+                p-1
+                backdrop-blur-sm
             ">
             
             <ResumeBtn/>
@@ -61,7 +61,6 @@ const AboutMe = ({content}:{content:string}) => {
 
         <div
         className="
-        text-end
         text-base lg:text-[18px]
         p-[4px]">
             {content}
