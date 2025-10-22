@@ -4,7 +4,8 @@ const Intro = ({name, s1, s2}:{name:string, s1:string, s2:string}) => {
   return (
     <div 
     className="
-    w-[100%] h-[100%]
+
+    sm:w-[640px] md:w-[768px] lg:w-[1024px]
     px-[16px] lg:px-[32px] py-[4px]">
 
       <div

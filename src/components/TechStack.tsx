@@ -13,45 +13,64 @@ const TechStack = () => {
   const skillsList = [reactSvg, tailwindcssSvg, nodeSvg, expressSvg, mongoDbSvg, nextSvg, typescriptSvg, githubSvg];
 
   return (
+
     <div id="skills"
       className="
-      flex
-      flex-col
-      justify-center
-      items-center
       relative
-      w-[100%]">
+      p-[16px] lg:p[32px] 
+      sm:w-[640px] md:w-[768px] lg:w-[1024px]
+      flex flex-col
+      justify-center items-center
+      backdrop-blur-sm 
+      border-0 border-white/25 rounded-sm
+      ">
+
       <div 
-      className="
-        relative
-        w-full
-        p-[4px]
-        cursor-pointer
-        transition-colors
-        hover:text-cyan-100  rounded-md
-        text-base lg:text-[18px]
-        font-extrabold
-        tracking-widest
-        backdrop-blur-sm
-        bg-black
-      "
-      >
-      TECH STACK
+        className="
+          relative
+          w-[100%]
+          bg-gradient-to-br
+          from-[#ededed] via-slate-300 to-[#ededed]
+          inline-flex
+          justify-between
+          items-center
+          text-base lg:text-[18px]
+          font-extrabold
+          text-center
+          px-[4px]
+          rounded-sm
+          ">
+            
+        {["T", "E", "C", "H", " ", "S", "T", "A", "C", "K"]
+          .map((ele, idx)=>(
+            <span 
+              key={idx}
+              className='text-black/50 p-[4px] rounded-sm'>
+              {ele}
+            </span>
+          ))}
+
       </div>
 
       <div
-      className='
-        relative
-        flex flex-wrap
-        gap-auto'>
+        className='
+          relative
+          flex flex-wrap
+          justify-between
+          items-center
+          w-full
+          py-[8px]
+          bg-slate-950/50
+          '>
+
         {skillsList.map((ele, idx)=>
-          (<div className=' relative w-1/8 md:w-1/8 flex justify-center overflow-hidden'>
-            <img className="rounded-md bg-white/16 p-[16px] w-[90%] sm:w-[90%] md:w-[85%] lg:w-[60%] grayscale-100" key={idx} src={ele}/>
+          (<div className=' relative w-[52px] h-[52px] md:w-[77px] md:h-[77px] lg:w-[112px] lg:h-[112px] flex justify-center overflow-hidden'>
+            <img className="rounded-md p-[16px] " key={idx} src={ele}/>
           </div>))}
+
       </div>
 
     </div>
-  )
-}
+)}
 
 export default TechStack

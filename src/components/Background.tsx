@@ -1,5 +1,5 @@
-import { FluidBackground } from "./FluidBackground";
-
+// import { FluidBackground } from "./FluidBackground";
+// import bg from "../assets/bg-1.png";
 const Background: React.FC = () => {
   
     return (
@@ -15,15 +15,17 @@ const Background: React.FC = () => {
       characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$&*()-_+=/[]{};:<>.,0123456789" />
        */}
       {/* <div className="absolute z-20 w-[100%] h-[100%] bg-gradient-to-l from-[#262626] via-[#262626] to-black"></div> */}
-      <div className=" absolute w-[100%] h-[100%] bg-black"></div>
      
-     <FluidBackground/>
+      <div className=" absolute w-[100%] h-[100%] 
+        bg-[radial-gradient(circle_at_center,transparent,theme(colors.pink.500/0),theme(colors.cyan.500/0),transparent)]"></div>
+     
+     {/* <FluidBackground/> */}
       {/* <div className="w-[100%] h-[100%] bg-black"></div> */}
         {/* <img src="bg-01.jpg" alt="." className="absolute  opacity-50"/> */}
         {/* <div className="absolute w-[75%] h-[50%] border-transparent border-8 shadow-2xl bg-cyan-200/20 z-13"></div> */}
         {/* <div className="absolute top-[50%] w-[50%] h-[60%] border-8 border-transparent shadow-2xl bg-gray-500/30 z-11"></div> */}
         {/* <div className="absolute top-[45%] w-full h-[50%] border-transparent border-8 shadow-2xl bg-cyan-100/10 z-12"></div> */}
-    
+       {/* <img src={bg} className="w-full h-full z-10"/> */}
     </div>
   )
   

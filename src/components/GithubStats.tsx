@@ -1,6 +1,6 @@
 const GithubStats = () => {
   return (
-    <div className="">GithubStats</div>
+    <div className=""></div>
   )
 }
 

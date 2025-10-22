@@ -18,6 +18,7 @@ const Home = function(){
     z-20
     relative
     overflow-x-hidden
+    pt-[8rem]
     flex flex-col justify-between items-center"
     
     id="main-content">

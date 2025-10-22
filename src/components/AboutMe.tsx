@@ -5,13 +5,10 @@ const AboutMe = ({content}:{content:string}) => {
     <div
     className="
         relative
-        w-[100%]
-        h-[100%]
+        sm:w-[640px] md:w-[768px] lg:w-[1024px]
         px-[16px] lg:px-[32px]
         py-[4px]
         flex flex-col justify-center items-center">
-
-        {/* <div className="skew-x-28"></div> */}
         
         <div
         className="
@@ -61,8 +58,10 @@ const AboutMe = ({content}:{content:string}) => {
 
         <div
         className="
-        text-base lg:text-[18px]
-        p-[4px]">
+            text-base 
+            lg:text-[18px]
+            text-center
+            ">
             {content}
         </div>
 

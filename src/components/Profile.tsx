@@ -19,8 +19,9 @@ flex flex-col justify-between items-center">
     <svg
       className="
         rounded-sm
-        bg-gradient-to-r
-        from-[#00a3a3] via-white to-[#7a0278]/75"
+        bg-gradient-to-br
+        from-slate-400 via-white to-slate-400 backdrop-blur-md
+        bg-[radial-gradient(circle_at_center,transparent,transparent,#a855f7/0)]"
       stroke="transparent"
       width="100%" 
       height="100%" 
@@ -28,9 +29,9 @@ flex flex-col justify-between items-center">
       preserveAspectRatio="none" 
       xmlns="http://www.w3.org/2000/svg"> 
 
-      <image href={profile} preserveAspectRatio="xMidYMid slice" width="100" height="100" x="1" y="0" opacity="0.2"/>
-      <image href={profile} preserveAspectRatio="xMidYMid slice" width="100" height="100" x="1" y="0" opacity="0.2"/>
-      <image href={profile} preserveAspectRatio="xMidYMid slice" width="100" height="100" x="0.5" y="0"  opacity="0.9"/>      
+      <image href={profile} preserveAspectRatio="xMidYMid slice" width="100" height="100" x="-0.5" y="-0.5" opacity="0.75"/>
+      <image href={profile} preserveAspectRatio="xMidYMid slice" width="100" height="100" x="0.5" y="-0.5" opacity="0.75"/>
+      <image href={profile} preserveAspectRatio="xMidYMid slice" width="100" height="100" x="0" y="0"  opacity="0.9"/>      
     </svg>
 </div>
 </div>)}
