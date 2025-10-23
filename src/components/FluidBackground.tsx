@@ -17,22 +17,18 @@ export const FluidBackground = () => {
       >
         {/* SINGLE container for the gooey effect */}
         <div className="absolute inset-0 filter contrast-64">
-          
-
-          {/* Blob 1: Top Middle */}
-          <motion.div
-            // CHANGED: "left-0" is now "left-1/2" for horizontal centering
+          {/* Blob 1: Top Middle - Currently commented out */}
+          {/* <motion.div
+            // This is the original blob, left as is.
             className="
-              absolute left-1/2 top-0 w-[100vw] h-[100vw] 
+              absolute left-1/2 top-0 w-[120vh] h-[120vh] 
               bg-gradient-to-r from-slate-500 via-cyan-900 to-slate-500 
-              bg-[radial-gradient(circle_at_center,theme(colors.cyan.50),theme(colors.cyan.500),transparent,transparent)]
+              bg-[radial-gradient(circle_at_center,transparent,transparent,transparent,theme(colors.cyan.800),transparent)]
               blur-[0px]"
             animate={{
-              // CHANGED: x: "-50%" translates it left by half its own width to finish centering
-              x: ["-100%", "-95%"],
-              // CHANGED: y: "-50%" moves it UP by half its own height, leaving only the bottom half visible
+              x: ["-120%", "-100%"],
               y: ["-5%", "0%"],
-              rotate: [120, 145],
+              rotate: [15, 30],
               borderRadius: [
                 "60% 90% 70% 80% / 60% 90% 70% 80%",
                 "120% 80% 100% 100% / 120% 60% 100% 100%",
@@ -46,37 +42,40 @@ export const FluidBackground = () => {
               repeat: Infinity,
               repeatType: "mirror",
             }}
-          />
-          
-          {/* Blob 1: Top Middle */}
+          /> */}
+
+          {/* Blob 2: Bottom Right (MODIFIED for more wobble) */}
           <motion.div
-            // CHANGED: "left-0" is now "left-1/2" for horizontal centering
-            className="absolute left-1/2 top-0 w-[100vw] h-[100vw] bg-gradient-to-r from-cyan-500 via-cyan-900 to-slate-500 
-            bg-[radial-gradient(circle_at_center,theme(colors.cyan.50),theme(colors.cyan.900),transparent,transparent)]
-            blur-[0px]"
+            className="
+              absolute left-[25%] top-[0%] w-[150vh] h-[150vh]  
+              bg-[radial-gradient(circle_at_center,transparent,transparent,transparent,theme(colors.purple.500))]
+              blur-[6px]"
             animate={{
-              // CHANGED: x: "-50%" translates it left by half its own width to finish centering
-              x: ["10%", "15%"],
-              // CHANGED: y: "-50%" moves it UP by half its own height, leaving only the bottom half visible
-              y: ["35%", "20%"],
-              rotate: [-40, 30],
+              x: ["0%", "-5%"],
+              y: ["-15%", "-10%"],
+              rotate: [30, 60],
               borderRadius: [
-                "60% 40% 70% 80% / 60% 30% 70% 80%",
-                "120% 80% 140% 160% / 120% 60% 140% 160%",
-                "55% 45% 40% 60% / 65% 40% 60% 45%",
-                "60% 40% 30% 70% / 60% 30% 70% 40%",
+                "60% 90% 70% 80% / 60% 90% 70% 80%", // Original
+                "85% 75% 65% 95% / 70% 80% 90% 60%",
+                "70% 100% 80% 90% / 90% 70% 80% 100%",
+                "95% 65% 75% 85% / 80% 90% 60% 70%",
+                "120% 80% 100% 100% / 120% 60% 100% 100%", // Original
+                "70% 90% 60% 80% / 100% 80% 70% 90%",
+                "80% 60% 90% 70% / 90% 70% 100% 60%",
+                "65% 85% 95% 75% / 60% 100% 80% 90%",
+                "55% 75% 80% 60% / 65% 70% 60% 65%", // Original
+                "90% 60% 70% 100% / 80% 90% 60% 70%",
+                "75% 95% 85% 65% / 70% 60% 90% 80%",
+                "60% 80% 65% 70% / 60% 65% 70% 75%", // Original
               ],
             }}
             transition={{
-              duration: 24,
+              duration: 32, // Increased duration to smooth out more keyframes
               ease: "easeInOut",
               repeat: Infinity,
               repeatType: "mirror",
             }}
           />
-          
-          
-
         </div>
       </motion.div>
     </div>

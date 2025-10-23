@@ -19,10 +19,10 @@ const NavBar = function(){
     }
     return (<div>
 
-        <nav className="hidden md:flex justify-center items-center gap-8">
+        <nav className="hidden md:flex justify-center items-center gap-8 pt-1">
+            <a className="nav-bar-item" href="#about-me">HOME</a>
             <a className="nav-bar-item" href="#skills">SKILLS</a>
             <a className="nav-bar-item" href="#projects">PROJECTS</a>
-            <a className="nav-bar-item" href="#about-me">HOME</a>
             <a className="nav-bar-item" href="#contact">CONTACT</a>
             <div className="nav-bar-item">
                 <ResumeBtn/>

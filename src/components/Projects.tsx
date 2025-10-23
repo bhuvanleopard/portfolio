@@ -18,9 +18,9 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
 
     return(
     <div id="projects" 
-        className="relative h-[100vh] min-h-fit w-full flex items-center justify-center p-4 lg:p-8">
+        className="relative min-h-fit w-full flex items-center justify-center p-4 lg:p-8 pb-[64px]">
     {/* <div className="absolute h-[5%] w-full bottom-0 bg-black"></div> */}
-    <div className="relative border-1 border-gray-100 bg-cyan-50/5 py-4
+    <div className="relative border-1 border-gray-300/50 bg-cyan-50/0 py-4
     overflow-x-hidden
     flex flex-col justify-center items-center 
     w-[100%] sm:w-[626px] md:w-[752px] lg:w-[992px] backdrop-blur-md rounded-md
@@ -29,7 +29,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
         <div className="relative flex flex-row justify-between items-center w-[100%] p-2 lg:p-4">
                 
                 <div className="relative  text-[1.25rem] sm:text-3xl md:text-4xl tracking-[5px] lg:text-5xl leading-none 
-                scale-y-120 pl-2 -skew-x-28
+                scale-y-120 pl-2 px-[8px]
                 md:tracking-[10px] font-extrabold"
                 
                 >{title}</div>
@@ -57,10 +57,10 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
 
             </div>
 
-        <div className="relative w-[100%] h-[50vw] sm:h-[320px] md:h-[384px] lg:h-[512px]">
+        <div className="relative p-[8px] w-[100%] h-[50vw] sm:h-[320px] md:h-[384px] lg:h-[512px] rounded-md flex justify-center">
                 <svg 
                     
-                    className=" border rounded-md p-2 " stroke="rgb(14 165 233)"
+                    className=" rounded-md" stroke="rgb(14 165 233)"
                     width="100%" 
                     height="100%" 
                     viewBox="0 0 100 100" 
@@ -84,11 +84,11 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                 </svg>
         </div>
 
-        <div className="text-base sm:text-xl p-2 lg:p-4 rounded-sm">{description}</div>
+        <div className="text-base sm:text-xl px-[8px] rounded-sm">{description}</div>
     
         <div
-            className="inline-flex flex-row w-[100%] flex-wrap gap-2 items-center p-2 px-3">
-            {techStack.map((ele,idx)=>(<span className=" -skew-x-28 tracking-widest text-base first:font-extrabold first:bg-black/50 first:border-white rounded-sm border-1 border-white/25 py-0.5 px-1" key={idx}>{ele}</span>))}
+            className="inline-flex flex-row w-[100%] flex-wrap gap-2 items-center p-2 px-[8px]">
+            {techStack.map((ele,idx)=>(<span className="tracking-widest text-base first:font-extrabold first:bg-black/50 first:border-white rounded-sm border-1 border-white/25 py-0.5 px-1" key={idx}>{ele}</span>))}
         </div>
 
         {/* <div className=" absolute top-0 h-[2px] w-[100%] bg-gray-100"></div> */}
@@ -103,10 +103,19 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
 const Projects = function({children}:PropsWithChildren){
 
     return(<div id="projects"
-    className="relative flex flex-col justify-between items-center w-[100%] min-h-fit" >
-        <div className="relative inline-flex justify-center items-center border
-        w-[96%] sm:w-[626px] md:w-[752px] lg:w-[992px] p-4 lg:p-8 backdrop-blur-md
-        bg-black/25"><span className="text-center font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-8xl tracking-[4vw]">PROJECTS</span></div>
+        className="relative 
+            flex flex-col justify-between items-center 
+            w-[100%] 
+            min-h-fit
+            p-[16px] lg:p-[32px]
+            scroll-mt-[4rem]" >
+  
+      <div className='w-full text-left pb-[16px]'>
+        <span className='py-[8px] rounded-md font-extrabold text-base md:text-xl bg-white/8 p-4'>
+          PROJECTS
+        </span>
+      </div>
+
         {children}
         
     </div>)

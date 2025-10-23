@@ -5,8 +5,9 @@ const Intro = ({name, s1, s2}:{name:string, s1:string, s2:string}) => {
     <div 
     className="
 
-    sm:w-[640px] md:w-[768px] lg:w-[1024px]
-    px-[16px] lg:px-[32px] py-[4px]">
+    w-[100%]
+    px-[16px] lg:px-[32px] py-[4px]
+    flex flex-col justify-center items-star">
 
       <div
       className="
@@ -21,7 +22,6 @@ const Intro = ({name, s1, s2}:{name:string, s1:string, s2:string}) => {
       <SVGIntroBoldWords 
         className=""
         words={name}/>
-
       <div
       className="
         p-[4px] md:p-[8px]

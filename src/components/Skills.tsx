@@ -1,19 +1,19 @@
-import GithubStats from "./GithubStats"
+// import GithubStats from "./GithubStats"
 import TechStack from "./TechStack"
 
 const Skills = () => {
   return (
-    <div id='skills'
+    <div
       className="
         relative
+        flex flex-col justify-center
         w-[100%]
-        p-[16px] lg:p-[32px]
-        flex
-        flex-col justify-center items-center
+        bg-gradient-to-r
+        from-slate-400/0 via-slate-300/0 to-slate-400/0
         ">
 
         <TechStack/>
-        <GithubStats/>
+        {/* <GithubStats/> */}
     </div>
   )
 }

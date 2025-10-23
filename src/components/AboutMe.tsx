@@ -5,10 +5,11 @@ const AboutMe = ({content}:{content:string}) => {
     <div
     className="
         relative
-        sm:w-[640px] md:w-[768px] lg:w-[1024px]
         px-[16px] lg:px-[32px]
         py-[4px]
-        flex flex-col justify-center items-center">
+        flex flex-col justify-center items-center
+        
+        ">
         
         <div
         className="
@@ -18,8 +19,8 @@ const AboutMe = ({content}:{content:string}) => {
                 cursor-pointer
                 transition-colors
                 border-2 border-white/50
-                hover:text-cyan-100 z-50  rounded-md
-                hover:border-2 hover:border-cyan-50
+                hover:text-purple-200 z-50  rounded-md
+                hover:border-2 hover:border-purple-400
                 text-xl md:text-3xl lg:text-4xl
                 font-extrabold
                 tracking-widest
@@ -60,7 +61,8 @@ const AboutMe = ({content}:{content:string}) => {
         className="
             text-base 
             lg:text-[18px]
-            text-center
+            text-end
+            text-white
             ">
             {content}
         </div>

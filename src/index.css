@@ -80,8 +80,10 @@
       transition-colors
       border-2
       border-transparent
-      hover:text-cyan-100 z-50  rounded-md
-      hover:border-2 hover:border-cyan-50
+      hover:text-purple-200
+      hover:border-purple-200
+      z-50  rounded-md
+      hover:border-2 
       md:text-xl
       font-extrabold
       tracking-widest

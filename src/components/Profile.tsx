@@ -12,15 +12,15 @@ rounded-sm
 opacity-100">
 <div 
 className="
-rounded-sm
+rounded-md
 relative
 flex flex-col justify-between items-center">
 
     <svg
       className="
-        rounded-sm
-        bg-gradient-to-br
-        from-slate-400 via-white to-slate-400 backdrop-blur-md
+        rounded-md
+        bg-gradient-to-bl
+        from-slate-400 via-slate-50 to-slate-400 backdrop-blur-md
         bg-[radial-gradient(circle_at_center,transparent,transparent,#a855f7/0)]"
       stroke="transparent"
       width="100%" 

@@ -18,24 +18,32 @@ const Home = function(){
     z-20
     relative
     overflow-x-hidden
-    pt-[8rem]
     flex flex-col justify-between items-center"
     
     id="main-content">
         
+        <div id="about-me"
+            className="
+                relative
+                flex flex-col 
+                h-[100vh] 
+                min-h-fit
+                justify-center items-center 
+                w-[100%]
+                ">
         <Intro name="BHUVAN" s1="HI! MY NAME IS" s2="I'M A FULL STACK DEVELOPER."/>
         <div className="p-[32px]"></div>
         <Profile profile={ProfileImg}/>
         <AboutMe
-            content="A FULL STACK DEVELOPER WITH HANDS ON EXPERIENCE IN BUILDING SCALABLE AND ROBUST WEB APPLICATIONS. 
-            PROFICIENT IN A VARIETY OF FRONTEND, 
-            BACKEND, AND SYSTEM DESIGN TECHNOLOGIES, 
-            WITH A STRONG COMMITMENT TO DELIVERING HIGH QUALITY SOLUTIONS. 
-            SKILLED IN PROBLEM SOLVING AND TEAM COLLABORATION, 
-            WITH A STRONG FOUNDATION IN DATA STRUCTURES AND ALGORITHMS."/>
+            content="HIGHLY MOTIVATED SOFTWARE DEVELOPER WITH A STRONG FOUNDATION IN FULL-STACK TECHNOLOGIES, INCLUDING REACT, NODE.JS, EXPRESS, TYPESCRIPT, AND TAILWIND CSS. 
+            MY EXPERTISE EXTENDS BEYOND WEB DEVELOPMENT, DRIVEN BY A DEEP UNDERSTANDING OF DATA STRUCTURES, ALGORITHMS, AND LOW-LEVEL DESIGN PRINCIPLES. 
+            I AM A PASSIONATE LIFELONG LEARNER, ACTIVELY EXPLORING DIVERSE DOMAINS OF SOFTWARE ENGINEERING AND STAYING AT THE FOREFRONT OF TECHNOLOGICAL ADVANCEMENTS. 
+            MY ULTIMATE AMBITION IS TO LEVERAGE THIS BROAD AND EVER-EXPANDING SKILL SET TO CONTRIBUTE TO THE NEXT WAVE OF INNOVATION IN SOFTWARE TECHNOLOGY."/>
         
+        </div>
+
         <Skills/>
-        
+        <div className="p-[32px]"></div>
         <Projects>
             <ProjectCard 
             image={ImgCaterer} 
