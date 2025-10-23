@@ -40,7 +40,11 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                         href = {repo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 text-[1rem]  md:text-3xl lg:text-5xl leading-none inline-flex border-2 bg-transparent rounded-md"
+                        className="p-2 text-[1rem] md:text-3xl lg:text-5xl
+                            leading-none 
+                            inline-flex border-2 bg-transparent 
+                            hover:scale-105
+                            rounded-md"
                     >
                         <FiGithub/>
                     </a>
@@ -49,7 +53,11 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                         href = {live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 text-[1rem] md:text-3xl lg:text-5xl leading-none inline-flex border-2 bg-transparent rounded-md"
+                        className="p-2 text-[1rem] md:text-3xl lg:text-5xl 
+                            leading-none 
+                            inline-flex border-2 bg-transparent 
+                            hover:scale-105
+                            rounded-md"
                     >
                         <FaExternalLinkAlt/>
                     </a>
@@ -108,10 +116,14 @@ const Projects = function({children}:PropsWithChildren){
             w-[100%] 
             min-h-fit
             p-[16px] lg:p-[32px]
-            scroll-mt-[4rem]" >
+            scroll-mt-[4rem]
+            " >
   
       <div className='w-full text-left pb-[16px]'>
-        <span className='py-[8px] rounded-md font-extrabold text-base md:text-xl bg-white/8 p-4'>
+        <span className='py-[8px] rounded-md 
+                font-extrabold text-base 
+                md:text-xl bg-white/8 p-4
+                hover-effect01'>
           PROJECTS
         </span>
       </div>

@@ -42,6 +42,8 @@ const Home = function(){
         
         </div>
 
+        <div className="h-[24px]"></div>
+
         <Skills/>
         <div className="p-[32px]"></div>
         <Projects>

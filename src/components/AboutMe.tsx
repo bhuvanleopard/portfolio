@@ -19,8 +19,8 @@ const AboutMe = ({content}:{content:string}) => {
                 cursor-pointer
                 transition-colors
                 border-2 border-white/50
-                hover:text-purple-200 z-50  rounded-md
-                hover:border-2 hover:border-purple-400
+                z-50  rounded-md
+                hover-effect01
                 text-xl md:text-3xl lg:text-4xl
                 font-extrabold
                 tracking-widest

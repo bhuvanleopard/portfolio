@@ -22,7 +22,7 @@ const TechStack = () => {
       justify-center items-center
       backdrop-blur-sm 
       border-0 border-white/25 rounded-md
-      scroll-mt-[4rem]
+      scroll-mt-[4rem] 
       ">
 
       {/* <div 
@@ -50,7 +50,10 @@ const TechStack = () => {
 
       </div> */}
       <div className='w-full text-left pb-[16px]'>
-        <span className='py-[8px] rounded-md font-extrabold text-base md:text-xl bg-white/8 p-4'>
+        <span className='py-[8px] rounded-md font-extrabold 
+                text-base md:text-xl 
+                bg-white/8 p-4
+                hover-effect01'>
           TECH STACK
         </span>
       </div>
@@ -78,7 +81,8 @@ const TechStack = () => {
             w-[50px]
             md:w-[64px]   
             lg:w-[75px]
-            p-[8px] mg:p-[16px]" 
+            p-[8px] md:p-[12px]
+            hover:scale-110" 
             
             key={idx} src={ele}/>
 

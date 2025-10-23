@@ -91,6 +91,12 @@
       backdrop-blur-sm
     }
 
+    .hover-effect01 {
+
+      @apply hover:border-2 hover:border-purple-400
+          hover:bg-gradient-to-br hover:from-slate-50 hover:via-purple-400 hover:to-slate-50
+          hover:scale-95
+    }
     .main-section {
 
       @apply h-[100vh] scroll-mt-24 lg:scroll-mt-28 flex flex-col items-center justify-evenly px-8
