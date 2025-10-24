@@ -54,7 +54,8 @@ const Home = function(){
             Engineered a dynamic pricing engine that generates instant, customizable quotes based on menu
             selections, guest count, and dietary needs.
             Developed a comprehensive dashboard for seamless order management, centralizing core business operations." 
-            techStack={["TECH STACK:", "TYPESCRIPT", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "NEXT JS", "TAILWIND CSS"]} live="" repo=""/>
+            techStack={["TECH STACK:", "TYPESCRIPT", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "NEXT JS", "TAILWIND CSS"]} 
+            repo="https://github.com/bhuvanleopard/catering-system" live="https://catering-service.auptimise.com/"/>
             <ProjectCard 
             image={ImgVote} 
             title="VOTE SYSTEM" 
@@ -63,7 +64,8 @@ const Home = function(){
             instantaneous submission of votes.
             Developed a responsive front-end interface that listens for web socket events to dynamically render the
             result charts in real-time." 
-            techStack={["TECH STACK:", "TYPESCRIPT", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "WEB SOCKET", "TAILWIND CSS"]} live="" repo=""/>
+            techStack={["TECH STACK:", "TYPESCRIPT", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "WEB SOCKET", "TAILWIND CSS"]}
+            repo="https://github.com/bhuvanleopard/voting-system" live="https://voting-system.auptimise.com/"/>
             <ProjectCard 
             image={ImgTask} 
             title="TASK MANAGER" 
@@ -72,7 +74,8 @@ const Home = function(){
             Integrated third-party APIs to empower AI agents to draft and dispatch email and message replies.
             Implemented an analytics module where AI agents analyze user activity and task patterns to generate
             daily work summaries and actionable insights." 
-            techStack={["TECH STACK:", "TYPESCRIPT", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "AI AGENT", "TAILWIND CSS"]} live="" repo=""/>
+            techStack={["TECH STACK:", "TYPESCRIPT", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "AI AGENT", "TAILWIND CSS"]}
+            repo="https://github.com/bhuvanleopard/task-manager" live="https://task-manager.auptimise.com/"/>
         </Projects>
         {/* </div> */}
         {/* </div> */}
