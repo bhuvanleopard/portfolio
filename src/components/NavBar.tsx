@@ -42,6 +42,10 @@ const NavBar = function(){
             <a onClick={toggleMobileMenu} className="cursor-pointer text-2xl tracking-[8px] transition-colors hover:text-gray-300 z-100 font-extrabold px-6 py-3 border-white/50 text-center" href="#skills">SKILLS</a>
             <a onClick={toggleMobileMenu} className="cursor-pointer text-2xl tracking-[8px] transition-colors hover:text-gray-300 z-100 font-extrabold px-6 py-3 border-white/50 text-center" href="#projects">PROJECTS</a>
             <a onClick={toggleMobileMenu} className="cursor-pointer text-2xl tracking-[8px] transition-colors hover:text-gray-300 z-10 font-extrabold px-6 py-3 border-white/50 text-center" href="#contact">CONTACT</a>
+            <a onClick={toggleMobileMenu} className="cursor-pointer text-2xl tracking-[8px] transition-colors hover:text-gray-300 z-10 font-extrabold px-6 py-3 border-white/50 text-center" href="#contact">
+                <ResumeBtn/>
+            </a>
+            
             
             </nav>
         </div>
