@@ -18,6 +18,7 @@ flex flex-col justify-between items-center">
 
     <svg
       className="
+
         rounded-md
         bg-gradient-to-bl
         from-slate-400 via-slate-50 to-slate-400 backdrop-blur-md

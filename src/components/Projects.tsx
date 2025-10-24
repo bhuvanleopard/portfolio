@@ -119,10 +119,11 @@ const Projects = function({children}:PropsWithChildren){
             scroll-mt-[4rem]
             " >
   
-      <div className='w-full text-left pb-[16px]'>
+      <div className='w-full text-left pb-[24px]'>
         <span className='py-[8px] rounded-md 
                 font-extrabold text-base 
-                md:text-xl bg-white/8 pr-2
+                md:text-xl
+                section-title
                 '>
           PROJECTS
         </span>

@@ -42,10 +42,10 @@ const Home = function(){
         
         </div>
 
-        <div className="h-[24px]"></div>
+        <div className="h-[48px]"></div>
 
         <Skills/>
-        <div className="p-[32px]"></div>
+        <div className="p-[48px]"></div>
         <Projects>
             <ProjectCard 
             image={ImgCaterer} 

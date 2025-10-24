@@ -58,7 +58,7 @@ const ContactMe: React.FC = () => {
       
           
       <div className='w-full text-left pb-[32px] pt-4'>
-        <span className='rounded-md font-extrabold text-base md:text-xl bg-white/8 pr-2'>
+        <span className='rounded-md font-extrabold text-base md:text-xl section-title'>
           LET'S CONNECT !!!
         </span>
       </div>

@@ -10,14 +10,14 @@ import githubSvg from '../assets/github.svg'
 const TechStack = () => {
 
   const skillsList = [reactSvg, tailwindcssSvg, nodeSvg, expressSvg, mongoDbSvg, nextSvg, typescriptSvg, githubSvg];
-
+  const title = ["ReactJS", "TailwindCSS", "NodeJS", "ExpressJS", "MongoDB", "NextJS", "Typescript", "Github"]
   return (
 
     <div id="skills"
       className="
       relative
       p-[16px] lg:p-[32px] 
-      w-[100%] sm:w-[640px] md:w-[768px] lg:w-[1024px]
+      w-[100%]
       flex flex-col
       justify-center items-center
       backdrop-blur-sm 
@@ -49,24 +49,25 @@ const TechStack = () => {
           ))}
 
       </div> */}
-      <div className='w-full text-left pb-[16px]'>
-        <span className='py-[8px] rounded-md font-extrabold 
+      <div className='w-full text-left pb-[24px]'>
+        <span className='py-[8px] rounded-md font-extrabold
+              section-title
                 text-base md:text-xl 
-                bg-white/8 pr-2
                 '>
           TECH STACK
         </span>
       </div>
       <div
         className='
+          
           relative
           flex flex-wrap
-          justify-between
+          justify-center
           items-center
-          w-full
+          w-[100%]
           py-[8px]
-          bg-slate-950/0
           rounded-md
+          
           '>
 
         {skillsList.map((ele, idx)=>
@@ -76,7 +77,8 @@ const TechStack = () => {
             w-1/4 md:w-1/8 
             flex flex-wrap 
             justify-center 
-            overflow-hidden'>
+            overflow-hidden'
+            title={title[idx]}>
             <img className="rounded-md 
             w-[50px]
             md:w-[64px]   

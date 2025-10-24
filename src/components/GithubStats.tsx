@@ -9,13 +9,14 @@ const GithubStats = () => {
         w-[100%]
         flex flex-col
         justify-center
-        items-end">
+        items-center">
       
-      <div className='w-full text-left pb-[4px]'>
-        <span className='py-[8px] rounded-md 
+      <div className='w-full text-left pb-[16px] '>
+        <span className='py-[8px] rounded-md  
+                section-title
                 font-extrabold text-base 
-                md:text-xl bg-white/8 pr-2
-                hover-effect01'>
+                md:text-xl
+                '>
           GITHUB CALENDAR
         </span>
       </div>
@@ -23,10 +24,13 @@ const GithubStats = () => {
       <div
         className="
         relative 
-        w-[100%]
-        py-[8px] lg:py-[16px]">
+        p-[16px] lg:p-[32px]
+        backdrop-blur-md rounded-md
+        flex justify-center
+        bg-gradient-to-br
+        from-purple-300/2 via-purple-600/0 to-slate-300/2">
 
-          <GitHubCalendar username="bhuvanleopard"/>
+          <GitHubCalendar username="bhuvanleopard" />
       </div>
       
     </div>
