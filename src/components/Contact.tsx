@@ -57,8 +57,8 @@ const ContactMe: React.FC = () => {
         bg-white/1'>
       
           
-      <div className='w-full text-left my-[4rem]'>
-        <span className='rounded-md font-extrabold text-base md:text-xl bg-white/8 p-4'>
+      <div className='w-full text-left pb-[32px] pt-4'>
+        <span className='rounded-md font-extrabold text-base md:text-xl bg-white/8 pr-2'>
           LET'S CONNECT !!!
         </span>
       </div>

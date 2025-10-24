@@ -68,7 +68,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
         <div className="relative p-[8px] w-[100%] h-[50vw] sm:h-[320px] md:h-[384px] lg:h-[512px] rounded-md flex justify-center">
                 <svg 
                     
-                    className=" rounded-md" stroke="rgb(14 165 233)"
+                    className=" rounded-md border-gray-300/24 border-1" stroke="rgb(14 165 233)"
                     width="100%" 
                     height="100%" 
                     viewBox="0 0 100 100" 
@@ -122,8 +122,8 @@ const Projects = function({children}:PropsWithChildren){
       <div className='w-full text-left pb-[16px]'>
         <span className='py-[8px] rounded-md 
                 font-extrabold text-base 
-                md:text-xl bg-white/8 p-4
-                hover-effect01'>
+                md:text-xl bg-white/8 pr-2
+                '>
           PROJECTS
         </span>
       </div>

@@ -11,8 +11,11 @@ const GithubStats = () => {
         justify-center
         items-end">
       
-      <div className='w-full text-left pb-[16px]'>
-        <span className='py-[8px] rounded-xl font-extrabold text-xl'>
+      <div className='w-full text-left pb-[4px]'>
+        <span className='py-[8px] rounded-md 
+                font-extrabold text-base 
+                md:text-xl bg-white/8 pr-2
+                hover-effect01'>
           GITHUB CALENDAR
         </span>
       </div>

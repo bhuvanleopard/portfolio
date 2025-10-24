@@ -1,4 +1,4 @@
-// import GithubStats from "./GithubStats"
+import GithubStats from "./GithubStats"
 import TechStack from "./TechStack"
 
 const Skills = () => {
@@ -13,7 +13,9 @@ const Skills = () => {
         ">
 
         <TechStack/>
-        {/* <GithubStats/> */}
+        <div className="p-[24px]"></div>
+        <GithubStats/>
+        <div className="p-[32px]"></div>
     </div>
   )
 }

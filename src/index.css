@@ -119,6 +119,11 @@
 
     @apply bg-black
   }
+
+  html {
+
+    @apply scroll-smooth
+  }
 }
 
 .about-me-container{
