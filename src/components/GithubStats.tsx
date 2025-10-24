@@ -24,6 +24,7 @@ const GithubStats = () => {
       <div
         className="
         relative 
+        w-[100%]
         p-[16px] lg:p-[32px]
         backdrop-blur-md rounded-md
         flex justify-center
