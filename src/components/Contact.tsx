@@ -66,6 +66,7 @@ const ContactMe: React.FC = () => {
       <div className="text-lg w-full max-w-lg flex justify-between p-[16px] rounded-md bg-white/2 items-center">
             <a
                 href="https://github.com/bhuvanleopard"
+                title="Github"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-4xl hover:scale-110 transition-transform hover:text-cyan-200"
@@ -75,18 +76,21 @@ const ContactMe: React.FC = () => {
 
             <a
                 href="mailto:cbhuvan08@gmail.com"
+                title="Email"
                 className="text-4xl hover:scale-110 transition-transform hover:text-amber-200"
             >
                 <CiMail/>
             </a>
             <a
                 href="tel:+919284169303"
+                title="Phone"
                 className="text-4xl hover:scale-110 transition-transform hover:text-amber-200"
             >
                 <CiPhone/>
             </a>
             <a
                 href="https://www.linkedin.com/in/bhuvan-in"
+                title='LinkedIn'
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-4xl hover:scale-110 transition-transform hover:text-amber-200"
