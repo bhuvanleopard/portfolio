@@ -37,7 +37,8 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                 <div className="flex flex-row justify-between items-center gap-4 pr-1">
                     
                     <a 
-                        href = {repo}
+                        href = {repo} 
+                        title="Github"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-2 text-[1rem] md:text-3xl lg:text-5xl
@@ -51,6 +52,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                     
                     <a 
                         href = {live}
+                        title="Live"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-2 text-[1rem] md:text-3xl lg:text-5xl 
