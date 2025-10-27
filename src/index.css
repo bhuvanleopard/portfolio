@@ -87,6 +87,7 @@
       md:text-xl
       font-extrabold
       tracking-widest
+      leading-none
       p-2
       backdrop-blur-sm
     }
