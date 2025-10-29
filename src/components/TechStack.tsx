@@ -67,6 +67,8 @@ const TechStack = () => {
           w-[100%]
           py-[8px]
           rounded-md
+          gap-y-[16px]
+          md:gap-y-auto
           
           '>
 

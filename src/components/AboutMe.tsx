@@ -63,6 +63,8 @@ const AboutMe = ({content}:{content:string}) => {
             lg:text-[18px]
             text-end
             text-white
+            sm:leading-[24px]
+            lg:leading-[36px]
             ">
             {content}
         </div>
