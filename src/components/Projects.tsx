@@ -28,7 +28,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
 
         <div className="relative flex flex-row justify-between items-center w-[100%] px-[8px]">
                 
-                <div className="relative  text-[1.5rem] sm:text-2xl md:text-3xl tracking-[5px] lg:text-4xl leading-none 
+                <div className="relative  text-[1rem] sm:text-2xl md:text-3xl tracking-[5px] lg:text-4xl leading-none 
                 scale-y-120 pl-2 px-[8px]
                 md:tracking-[10px] font-extrabold"
                 
@@ -41,7 +41,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                         title="Github"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-1.5 text-[1rem] md:text-2xl lg:text-4xl
+                        className="p-1.5 text-[10px] sm:text-[1rem] md:text-2xl lg:text-4xl
                             leading-none 
                             inline-flex border-2 bg-transparent 
                             hover:scale-105
@@ -55,7 +55,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                         title="Live"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-1.5 text-[1rem] md:text-2xl lg:text-4xl 
+                        className="p-1.5 text-[10px] sm:text-[1rem] md:text-2xl lg:text-4xl 
                             leading-none 
                             inline-flex border-2 bg-transparent 
                             hover:scale-105
