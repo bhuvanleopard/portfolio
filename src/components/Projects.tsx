@@ -20,15 +20,15 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
     <div id="projects" 
         className="relative min-h-fit w-full flex items-center justify-center p-4 lg:p-8 pb-[64px]">
     {/* <div className="absolute h-[5%] w-full bottom-0 bg-black"></div> */}
-    <div className="relative border-1 border-gray-300/50 bg-cyan-50/0 py-4
+    <div className="relative border-1 border-gray-300/50 bg-cyan-50/0 py-2 pt-4 lg:pt-6
     overflow-x-hidden
     flex flex-col justify-center items-center 
-    w-[100%] sm:w-[626px] md:w-[752px] lg:w-[992px] backdrop-blur-md rounded-md
-    gap-2">
+    w-[100%] sm:w-[512px] md:w-[600px] lg:w-[820px] backdrop-blur-md rounded-md gap-2 
+    ">
 
-        <div className="relative flex flex-row justify-between items-center w-[100%] p-2 lg:p-4">
+        <div className="relative flex flex-row justify-between items-center w-[100%] px-[8px]">
                 
-                <div className="relative  text-[1.25rem] sm:text-3xl md:text-4xl tracking-[5px] lg:text-5xl leading-none 
+                <div className="relative  text-[1.5rem] sm:text-2xl md:text-3xl tracking-[5px] lg:text-4xl leading-none 
                 scale-y-120 pl-2 px-[8px]
                 md:tracking-[10px] font-extrabold"
                 
@@ -41,7 +41,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                         title="Github"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 text-[1rem] md:text-3xl lg:text-5xl
+                        className="p-1.5 text-[1rem] md:text-2xl lg:text-4xl
                             leading-none 
                             inline-flex border-2 bg-transparent 
                             hover:scale-105
@@ -55,7 +55,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                         title="Live"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 text-[1rem] md:text-3xl lg:text-5xl 
+                        className="p-1.5 text-[1rem] md:text-2xl lg:text-4xl 
                             leading-none 
                             inline-flex border-2 bg-transparent 
                             hover:scale-105
@@ -67,7 +67,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
 
             </div>
 
-        <div className="relative p-[8px] w-[100%] h-[50vw] sm:h-[320px] md:h-[384px] lg:h-[512px] rounded-md flex justify-center">
+        <div className="relative p-[8px] w-[100%] h-[40vw] sm:h-[256px] md:h-[310px] lg:h-[410px] rounded-md flex justify-center">
                 <svg 
                     
                     className=" rounded-md border-gray-300/24 border-1" stroke="rgb(14 165 233)"
@@ -94,7 +94,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                 </svg>
         </div>
 
-        <div className="text-base sm:text-xl px-[8px] rounded-sm">{description}</div>
+        <div className="text-base sm:text-xl px-[8px] pt-2 rounded-sm">{description}</div>
     
         <div
             className="inline-flex flex-row w-[100%] flex-wrap gap-2 items-center p-2 px-[8px]">
