@@ -22,7 +22,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
     w-[400px] backdrop-blur-md rounded-md gap-2 
     ">
 
-        <div className="relative  text-[1rem] sm:text-2xl md:text-3xl tracking-[5px] lg:text-4xl
+        <div className="relative text-2xl md:text-3xl tracking-[5px] lg:text-4xl
         md:tracking-[10px] font-extrabold text-center p-4 bg-slate-900/20 w-[100%] rounded-b-2xl rounded-md"
         
         >{title}</div>
@@ -54,7 +54,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                 </svg>
         </div>
 
-        <div className="text-base sm:text-xl px-[8px] pt-2 rounded-sm">{description}</div>
+        <div className="text-base px-[8px] pt-2 rounded-sm">{description}</div>
     
         <div
             className="inline-flex flex-row w-[100%] flex-wrap gap-2 items-center p-2 px-[8px]">
@@ -68,7 +68,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                 title="Github"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 md:text-2xl w-[49%] font-bold
+                className="p-4 text-2xl w-[49%] font-bold
                     leading-none 
                      bg-slate-900/20 text-center
                     hover:scale-98 rounded-md"
@@ -82,7 +82,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                 title="Live"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 md:text-2xl w-[49%] font-bold
+                className="p-4 text-2xl w-[49%] font-bold
                     leading-none 
                      bg-slate-900/20 text-center
                     hover:scale-98 rounded-md"
