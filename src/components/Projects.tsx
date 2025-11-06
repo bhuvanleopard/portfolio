@@ -68,7 +68,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                 title="Github"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 text-[10px] sm:text-[1rem] md:text-2xl w-[49%] font-bold
+                className="p-4 md:text-2xl w-[49%] font-bold
                     leading-none 
                      bg-slate-900/20 text-center
                     hover:scale-98 rounded-md"
@@ -82,7 +82,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                 title="Live"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 text-[10px] sm:text-[1rem] md:text-2xl w-[49%] font-bold
+                className="p-4 md:text-2xl w-[49%] font-bold
                     leading-none 
                      bg-slate-900/20 text-center
                     hover:scale-98 rounded-md"
