@@ -1,9 +1,6 @@
 import Contact from "./Contact";
 import ProfileImg from "../assets/profile-100.png";
 import Project from "./Projects";
-import ImgCaterer from "../assets/catering-service.webp";
-import ImgVote from "../assets/voting-system.webp";
-import ImgTask from "../assets/task-manager-thumbail.webp";
 import Intro from "./Intro";
 import Profile from "./Profile";
 import AboutMe from "./AboutMe";
@@ -48,34 +45,25 @@ const Home = function(){
         <div className="p-[48px]"></div>
         <Projects>
             <ProjectCard 
-            image={ImgCaterer} 
-            title="CATERING SERVICE" 
-            description="A real-world application for a catering business, designed to manage users and operational needs.
-            Engineered a dynamic pricing engine that generates instant, customizable quotes based on menu
-            selections, guest count, and dietary needs.
-            Developed a comprehensive dashboard for seamless order management, centralizing core business operations." 
-            techStack={["TECH STACK:", "TYPESCRIPT", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "NEXT JS", "TAILWIND CSS"]} 
-            repo="https://github.com/bhuvanleopard/catering-system" live="https://catering-service.auptimise.com/"/>
+            image="./resumeBuilder.png" 
+            title="BUILD RESUME" 
+            description="Resume Builder is a user-friendly web app to create, customize, and download professional resumes with ready-to-use templates and tips." 
+            techStack={["TECH STACK:", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "TAILWIND CSS"]} 
+            repo="https://github.com/bhuvanleopard/resume-builder" live="https://resume-builder-frontend-5yy4.onrender.com"/>
+            
             <ProjectCard 
-            image={ImgVote} 
-            title="VOTE SYSTEM" 
-            description="Developed a full-stack, real-time polling application, designed to facilitate live audience engagement.
-            Implemented a persistent, bi-directional communication channel using web sockets, enabling
-            instantaneous submission of votes.
-            Developed a responsive front-end interface that listens for web socket events to dynamically render the
-            result charts in real-time." 
-            techStack={["TECH STACK:", "TYPESCRIPT", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "WEB SOCKET", "TAILWIND CSS"]}
-            repo="https://github.com/bhuvanleopard/voting-system" live="https://voting-system.auptimise.com/"/>
+            image="./memoCap.png" 
+            title="TIME CAPSULE" 
+            description="Digital Time Capsule is an app to save photos, messages, and videos as memories, locked and revealed at a future date" 
+            techStack={["TECH STACK:", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "TAILWIND CSS"]}
+            repo="https://github.com/bhuvanleopard/time-capsule" live="https://digitaltimecapsul.netlify.app"/>
+            
             <ProjectCard 
-            image={ImgTask} 
-            title="TASK MANAGER" 
-            description="AI-driven task management platform designed to enhance productivity by deploying autonomous agents
-            that automate routine administrative and communication tasks.
-            Integrated third-party APIs to empower AI agents to draft and dispatch email and message replies.
-            Implemented an analytics module where AI agents analyze user activity and task patterns to generate
-            daily work summaries and actionable insights." 
-            techStack={["TECH STACK:", "TYPESCRIPT", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "AI AGENT", "TAILWIND CSS"]}
-            repo="https://github.com/bhuvanleopard/task-manager" live="https://task-manager.auptimise.com/"/>
+            image="./pharmacy.png"
+            title="PHARMACY" 
+            description="A responsive e-commerce platform for medicines and healthcare products, with advanced search, filter, and add to cart feature." 
+            techStack={["TECH STACK:", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "TAILWIND CSS"]}
+            repo="https://github.com/bhuvanleopard/online-pharmacy" live="https://legendary-bienenstitch-f1cc83.netlify.app"/>
         </Projects>
         {/* </div> */}
         {/* </div> */}
