@@ -60,7 +60,7 @@ const Home = function(){
             
             <ProjectCard 
             image="./pharmacy.png"
-            title="PHARMACY" 
+            title="BUY MEDICINE" 
             description="A responsive e-commerce platform for medicines and healthcare products, with advanced search, filter, and add to cart feature." 
             techStack={["TECH STACK:", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "TAILWIND CSS"]}
             repo="https://github.com/bhuvanleopard/online-pharmacy" live="https://legendary-bienenstitch-f1cc83.netlify.app"/>
