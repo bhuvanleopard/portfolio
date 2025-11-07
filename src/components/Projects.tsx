@@ -102,7 +102,7 @@ const Projects = function({children}:PropsWithChildren){
             flex flex-col justify-center items-center 
             w-[100%] 
             min-h-fit
-            p-[16px] lg:p-[32px]
+            px-[16px] lg:px-[32px] pt-[64px] pb-[128px]
             scroll-mt-[4rem]
             " >
   
