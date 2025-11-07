@@ -23,7 +23,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
     ">
 
         <div className="relative text-2xl md:text-3xl tracking-[5px] lg:text-4xl
-        md:tracking-[10px] font-extrabold text-center p-4 bg-slate-900/20 w-[100%] rounded-b-2xl rounded-md"
+        md:tracking-[10px] font-extrabold text-center p-4 bg-slate-900/30 w-[100%] rounded-b-2xl rounded-md"
         
         >{title}</div>
 
@@ -54,11 +54,11 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                 </svg>
         </div>
 
-        <div className="text-base px-[8px] pt-2 rounded-sm">{description}</div>
+        <div className="text-base px-[8px] py-4 rounded-sm">{description}</div>
     
         <div
-            className="inline-flex flex-row w-[100%] flex-wrap gap-2 items-center p-2 px-[8px]">
-            {techStack.map((ele,idx)=>(<span className="tracking-widest text-base first:font-extrabold first:bg-black/50 first:border-white/40 rounded-sm border-1 border-white/25 py-0.5 px-1" key={idx}>{ele}</span>))}
+            className="inline-flex flex-row w-[100%] flex-wrap gap-2 items-center pb-4 px-[8px]">
+            {techStack.map((ele,idx)=>(<span className="tracking-widest text-base first:font-extrabold first:bg-black/50 first:border-white/30 rounded-sm border-1 border-white/15 py-0.5 px-1" key={idx}>{ele}</span>))}
         </div>
 
         <div className="flex flex-row justify-between items-center gap-0 w-[100%] p-2">
@@ -70,7 +70,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                 rel="noopener noreferrer"
                 className="p-4 text-2xl w-[49%] font-bold
                     leading-none 
-                     bg-slate-900/20 text-center
+                     bg-slate-900/30 text-center
                     hover:scale-98 rounded-md"
             >
                 {/* <FiGithub/> */}
@@ -84,7 +84,7 @@ const ProjectCard = ({image, title, description, techStack, live, repo}:CardI)=>
                 rel="noopener noreferrer"
                 className="p-4 text-2xl w-[49%] font-bold
                     leading-none 
-                     bg-slate-900/20 text-center
+                     bg-slate-900/30 text-center
                     hover:scale-98 rounded-md"
             >
                 {/* <FaExternalLinkAlt/> */}
