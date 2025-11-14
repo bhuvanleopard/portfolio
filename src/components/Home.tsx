@@ -28,7 +28,7 @@ const Home = function(){
                 justify-center items-center 
                 w-[100%]
                 ">
-        <Intro name="BHUVAN" s1="HI! MY NAME IS" s2="I'M A FULL STACK DEVELOPER."/>
+        <Intro name="BHUVAN" s1="HI... MY NAME IS" s2="I'M A FULL STACK DEVELOPER."/>
         <div className="p-[32px]"></div>
         <Profile profile={ProfileImg}/>
         <AboutMe
