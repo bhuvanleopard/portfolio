@@ -49,21 +49,21 @@ const Home = function(){
             title="BUILD RESUME" 
             description="Resume Builder is a user-friendly web app to create, customize, and download professional resumes with ready-to-use templates and tips." 
             techStack={["TECH STACK:", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "TAILWIND CSS"]} 
-            repo="https://github.com/bhuvanleopard/resume-builder" live="https://resume-builder-frontend-5yy4.onrender.com"/>
+            repo="" live=""/>
             
             <ProjectCard 
             image="./memoCap.png" 
             title="TIME CAPSULE" 
             description="Digital Time Capsule is an app to save photos, messages, and videos as memories, locked and revealed at a future date" 
             techStack={["TECH STACK:", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "TAILWIND CSS"]}
-            repo="https://github.com/bhuvanleopard/time-capsule" live="https://digitaltimecapsul.netlify.app"/>
+            repo="" live=""/>
             
             <ProjectCard 
             image="./pharmacy.png"
             title="BUY MEDICINE" 
             description="A responsive e-commerce platform for medicines and healthcare products, with advanced search, filter, and add to cart feature." 
             techStack={["TECH STACK:", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "TAILWIND CSS"]}
-            repo="https://github.com/bhuvanleopard/online-pharmacy" live="https://legendary-bienenstitch-f1cc83.netlify.app"/>
+            repo="" live=""/>
         </Projects>
         {/* </div> */}
         {/* </div> */}
