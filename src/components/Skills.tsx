@@ -1,6 +1,5 @@
 import GithubStats from "./GithubStats"
 import TechStack from "./TechStack"
-import TypingStats from "./TypingStats"
 
 const Skills = () => {
   return (
