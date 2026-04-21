@@ -15,6 +15,8 @@ const Skills = () => {
         <TechStack/>
         <div className="p-[32px] h-[100%] bg-purple-950/0 w-[100%]"></div>
         <GithubStats/>
+        {/* <div className="p-[32px] h-[100%] bg-purple-950/0 w-[100%]"></div>
+        <TypingStats/> */}
         <div className="p-[32px]"></div>
     </div>
   )
