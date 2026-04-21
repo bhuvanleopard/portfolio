@@ -4,6 +4,7 @@ import Project from "./Projects";
 import Intro from "./Intro";
 import Profile from "./Profile";
 import AboutMe from "./AboutMe";
+import Experience from "./Experience";
 import Skills from "./Skills";
 
 const {ProjectCard, Projects} = Project
@@ -38,6 +39,10 @@ const Home = function(){
             MY ULTIMATE AMBITION IS TO LEVERAGE THIS BROAD AND EVER-EXPANDING SKILL SET TO CONTRIBUTE TO THE NEXT WAVE OF INNOVATION IN SOFTWARE TECHNOLOGY."/>
         
         </div>
+
+        <div className="h-[48px]"></div>
+
+        <Experience/>
 
         <div className="h-[48px]"></div>
 
