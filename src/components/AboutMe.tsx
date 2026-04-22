@@ -1,14 +1,15 @@
 import ResumeBtn from "./ResumeBtn"
 
-const AboutMe = ({content}:{content:string}) => {
+const AboutMe = ({content, id}:{content:string, id?: string}) => {
   return (
     <div
+    id={id}
     className="
         relative
         px-[16px] lg:px-[32px]
         py-[4px]
         flex flex-col justify-center items-center
-        
+        scroll-mt-[-4rem]
         ">
         
         <div

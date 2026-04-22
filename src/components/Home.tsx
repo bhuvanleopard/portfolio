@@ -20,7 +20,7 @@ const Home = function(){
     
     id="main-content">
         
-        <div id="about-me"
+        <div id="home"
             className="
                 relative
                 flex flex-col 
@@ -33,6 +33,7 @@ const Home = function(){
         <div className="p-[32px]"></div>
         <Profile profile={ProfileImg}/>
         <AboutMe
+            id="about-me"
             content="HIGHLY MOTIVATED SOFTWARE DEVELOPER WITH A STRONG FOUNDATION IN FULL-STACK TECHNOLOGIES, INCLUDING REACT, NODE.JS, EXPRESS, TYPESCRIPT, AND TAILWIND CSS. 
             MY EXPERTISE EXTENDS BEYOND WEB DEVELOPMENT, DRIVEN BY A DEEP UNDERSTANDING OF DATA STRUCTURES, ALGORITHMS, AND LOW-LEVEL DESIGN PRINCIPLES. 
             I AM A PASSIONATE LIFELONG LEARNER, ACTIVELY EXPLORING DIVERSE DOMAINS OF SOFTWARE ENGINEERING AND STAYING AT THE FOREFRONT OF TECHNOLOGICAL ADVANCEMENTS. 
@@ -69,6 +70,14 @@ const Home = function(){
             description="A responsive e-commerce platform for medicines and healthcare products, with advanced search, filter, and add to cart feature." 
             techStack={["TECH STACK:", "REACT", "NODE JS", "EXPRESS", "MONGO DB", "TAILWIND CSS"]}
             repo="https://github.com/bhuvanleopard/online-pharmacy" live="https://legendary-bienenstitch-f1cc83.netlify.app"/>
+
+            <ProjectCard 
+            image="./ecommerce.png"
+            title="QUICK CART" 
+            description="Quick Cart is a one-stop destination for all your shopping needs. From fashion to electronics, we have it all." 
+            techStack={["TECH STACK:", "NEXT JS", "CLERK", "INNGUEST", "TAILWIND CSS"]}
+            repo="https://github.com/bhuvanleopard/ecommerce-2" live="https://ecommerce-2-one.vercel.app/"/>
+            
         </Projects>
         {/* </div> */}
         {/* </div> */}
