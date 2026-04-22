@@ -13,7 +13,7 @@ const TechStack = () => {
   const title = ["ReactJS", "TailwindCSS", "NodeJS", "ExpressJS", "MongoDB", "NextJS", "Typescript", "Github"]
   return (
 
-    <div id="skills"
+    <div id="skillss"
       className="
       relative
       p-[16px] lg:p-[32px] 
